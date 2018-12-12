@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "costCenter":{
+            "value": "5550"
+        },
+        "environmentName":{
+            "value": "Dev"
+        },
+        "region":{
+            "value": "North America"
+        },
+        "lineOfBusiness":{
+            "value": "RO"
+        },
+        "projectId":{
+            "value": "404"
+        }
+    }
+}

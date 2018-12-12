@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "newLabName": {
+      "value": "NewDevTestLab",
+      "metadata": {
+        "description": "The name of the new lab instance to be created."
+      }
+    },
+    "labVmShutDownTime": {
+      "value": "19:00",
+      "metadata": {
+        "description": "The time (relative to timeZoneId) at which the Lab VMs will be automatically shutdown (E.g. 17:30, 20:00, 09:00)."
+      }
+    },
+    "timeZoneId": {
+      "value": "Eastern Standard Time",
+      "metadata": {
+        "description": "The Windows time zone id associated with labVmShutDownTime (E.g. UTC, Pacific Standard Time, Central Europe Standard Time)."
+      }
+    },
+    "totalLabUsers": {
+      "value": 5,
+      "metadata": {
+        "description": "The maximum number of users in the lab."
+      }
+    },
+    "allowedVmSizes": {
+      "value": "\"Standard_DS1_v2\", \"Standard_DS2_v2\", \"Standard_DS3_v2\", \"Standard_D2s_v3\", \"Standard_D4s_v3\"",
+      "metadata": {
+        "description": "A comma-separated list of VM sizes that are allowed in the lab."
+      }
+    },
+    "artifactRepoSecurityToken": {
+      "value": ""
+    },
+    "teamOwner": {
+      "value": "Sample Team"
+    },
+    "vmOffer": {
+      "value": "WindowsServer"
+    },
+    "vmPublisher": {
+      "value": "MicrosoftWindowsServer"
+    },
+    "vmSku": {
+      "value": "2016-Datacenter"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: menxiao
+Build-Jdk: 1.8.0_151
+Extension-Name: azure-ad
+Specification-Title: A Jenkins authentication & authorization plugin f
+ or Azure Active Directory
+Implementation-Title: azure-ad
+Implementation-Version: 0.3.0
+Plugin-Class: com.microsoft.jenkins.azuread.AzureAdPlugin
+Group-Id: org.jenkins-ci.plugins
+Short-Name: azure-ad
+Long-Name: Azure AD Plugin
+Url: https://wiki.jenkins.io/display/JENKINS/Azure+AD+Plugin
+Plugin-Version: 0.3.0
+Hudson-Version: 2.60.1
+Jenkins-Version: 2.60.1
+Mask-Classes: com.microsoft.jenkins.azurecommons.core.                
+         com.fasterxml.jackson.                        com.google.comm
+ on.                        org.apache.commons.lang3                  
+       com.microsoft.azure.AzureAsyncOperation                        
+ com.microsoft.azure.AzureClient                        com.microsoft.
+ azure.AzureEnvironment                        com.microsoft.azure.Azu
+ reResponseBuilder                        com.microsoft.azure.AzureSer
+ viceClient                        com.microsoft.azure.AzureServiceFut
+ ure                        com.microsoft.azure.CloudError            
+             com.microsoft.azure.CloudException                       
+  com.microsoft.azure.ListOperationCallback                        com
+ .microsoft.azure.Page                        com.microsoft.azure.Page
+ dList                        com.microsoft.azure.PollingState        
+                 com.microsoft.azure.Resource                        c
+ om.microsoft.azure.SubResource                        com.microsoft.a
+ ad.                        com.microsoft.applicationinsights.        
+                 com.microsoft.azure.credentials.                     
+    com.microsoft.azure.keyvault.                        com.microsoft
+ .azure.management.                        com.microsoft.azure.seriali
+ zer.                        com.microsoft.azure.storage.             
+            com.microsoft.rest.
+Plugin-Dependencies: azure-commons:0.2.3,cloudbees-folder:6.1.0;resolu
+ tion:=optional,matrix-auth:2.2
+Plugin-Developers: Azure DevOps Team:azure_devops:vscjenkins@microsoft
+ .com
+

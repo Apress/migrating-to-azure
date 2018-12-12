@@ -1,0 +1,1662 @@
+{
+    "source": 2,
+    "revision": 2,
+    "description": null,
+    "createdBy": {
+        "displayName": "Josh Garverick",
+        "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "_links": {
+            "avatar": {
+                "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            }
+        },
+        "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "uniqueName": "jgarverick@outlook.com",
+        "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+    },
+    "createdOn": "2018-03-17T01:04:08.877Z",
+    "modifiedBy": {
+        "displayName": "Josh Garverick",
+        "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "_links": {
+            "avatar": {
+                "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            }
+        },
+        "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "uniqueName": "jgarverick@outlook.com",
+        "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+    },
+    "modifiedOn": "2018-04-16T15:13:30.237Z",
+    "isDeleted": false,
+    "variables": {},
+    "variableGroups": [],
+    "environments": [
+        {
+            "id": 3,
+            "name": "Integration",
+            "rank": 1,
+            "owner": {
+                "displayName": "Josh Garverick",
+                "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "_links": {
+                    "avatar": {
+                        "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+                    }
+                },
+                "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "uniqueName": "jgarverick@outlook.com",
+                "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            },
+            "variables": {},
+            "variableGroups": [
+                1
+            ],
+            "preDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 7
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 1
+                }
+            },
+            "deployStep": {
+                "id": 8
+            },
+            "postDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": false,
+                        "isNotificationOn": false,
+                        "approver": {
+                            "displayName": "[Cloud Solutions]\\Cardstock Integration Approvers",
+                            "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "_links": {
+                                "avatar": {
+                                    "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjI2Mzc2MzMtMjA1OTUzMzg5OC0yODUyMDQyNzQ1LTYxODQ1MTcyNy0xLTM5MzE5MDQ5NjItMTU4MTkyMDgzOC0yOTU0Mzg3OTYzLTM4NTU0MzczODc"
+                                }
+                            },
+                            "id": "22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "uniqueName": "vstfs:///Classification/TeamProject/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f\\Cardstock Integration Approvers",
+                            "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "isContainer": true,
+                            "descriptor": "vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjI2Mzc2MzMtMjA1OTUzMzg5OC0yODUyMDQyNzQ1LTYxODQ1MTcyNy0xLTM5MzE5MDQ5NjItMTU4MTkyMDgzOC0yOTU0Mzg3OTYzLTM4NTU0MzczODc"
+                        },
+                        "id": 20
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 1440,
+                    "executionOrder": 2
+                }
+            },
+            "deployPhases": [
+                {
+                    "deploymentInput": {
+                        "parallelExecution": {
+                            "parallelExecutionType": "none"
+                        },
+                        "skipArtifactsDownload": false,
+                        "artifactsDownloadInput": {
+                            "downloadInputs": [
+                                {
+                                    "alias": "Trading",
+                                    "artifactType": "AzureContainerRepository",
+                                    "artifactDownloadMode": "All"
+                                },
+                                {
+                                    "alias": "Inventory",
+                                    "artifactType": "AzureContainerRepository",
+                                    "artifactDownloadMode": "All"
+                                },
+                                {
+                                    "alias": "Cardstock UI",
+                                    "artifactType": "AzureContainerRepository",
+                                    "artifactDownloadMode": "All"
+                                },
+                                {
+                                    "alias": "Messaging",
+                                    "artifactType": "AzureContainerRepository",
+                                    "artifactDownloadMode": "All"
+                                }
+                            ]
+                        },
+                        "queueId": 14,
+                        "demands": [],
+                        "enableAccessToken": false,
+                        "timeoutInMinutes": 0,
+                        "jobCancelTimeoutInMinutes": 1,
+                        "condition": "succeeded()",
+                        "overrideInputs": {}
+                    },
+                    "rank": 1,
+                    "phaseType": 1,
+                    "name": "Agent phase",
+                    "workflowTasks": [
+                        {
+                            "taskId": "a8515ec8-7254-4ffd-912c-86772e2b5962",
+                            "version": "2.*",
+                            "name": "Replace tokens in **/*.yaml",
+                            "refName": "",
+                            "enabled": true,
+                            "alwaysRun": false,
+                            "continueOnError": false,
+                            "timeoutInMinutes": 0,
+                            "definitionType": "task",
+                            "overrideInputs": {},
+                            "condition": "succeeded()",
+                            "inputs": {
+                                "rootDirectory": "",
+                                "targetFiles": "**/*.yaml",
+                                "encoding": "auto",
+                                "writeBOM": "true",
+                                "actionOnMissing": "warn",
+                                "keepToken": "false",
+                                "tokenPrefix": "#{",
+                                "tokenSuffix": "}#",
+                                "emptyValue": "(empty)",
+                                "escapeChar": "",
+                                "charsToEscape": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": true,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [
+                {
+                    "name": "ReleaseStarted",
+                    "conditionType": 1,
+                    "value": ""
+                }
+            ],
+            "executionPolicy": {
+                "concurrencyCount": 1,
+                "queueDepthCount": 0
+            },
+            "schedules": [],
+            "currentRelease": {
+                "id": 1,
+                "url": "https://gamecorp-us.vsrm.visualstudio.com/Cloud%20Solutions/_apis/Release/releases/1",
+                "_links": {}
+            },
+            "retentionPolicy": {
+                "daysToKeep": 30,
+                "releasesToKeep": 3,
+                "retainBuild": true
+            },
+            "processParameters": {},
+            "properties": {},
+            "preDeploymentGates": {
+                "id": 0,
+                "gatesOptions": {
+                    "isEnabled": false,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": [
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "537fdb7a-a601-4537-aa70-92645a2b5ce4",
+                                "version": "1.*",
+                                "name": "Azure Function: ",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "function": "",
+                                    "key": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "queryParameters": "",
+                                    "body": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "9c3e8943-130d-4c78-ac63-8af81df62dfb",
+                                "version": "1.*",
+                                "name": "Invoke REST API: POST",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceName": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "body": "",
+                                    "urlSuffix": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "99a72e7f-25e4-4576-bf38-22a42b995ed8",
+                                "version": "0.*",
+                                "name": "Query Azure Monitor alerts",
+                                "enabled": true,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceNameARM": "a8183851-554e-41a5-8e99-ea59cb64f581",
+                                    "ResourceGroupName": "gc-sandbox",
+                                    "ResourceType": "Microsoft.Insights/components",
+                                    "resourceName": "",
+                                    "alertRules": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "f1e4b0e6-017e-4819-8a48-ef19ae96e289",
+                                "version": "0.*",
+                                "name": "Query Work Items",
+                                "enabled": true,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "queryId": "",
+                                    "maxThreshold": "0",
+                                    "minThreshold": "0"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "postDeploymentGates": {
+                "id": 19,
+                "gatesOptions": {
+                    "isEnabled": true,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": [
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "537fdb7a-a601-4537-aa70-92645a2b5ce4",
+                                "version": "1.*",
+                                "name": "Azure Function: ",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "function": "",
+                                    "key": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "queryParameters": "",
+                                    "body": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "9c3e8943-130d-4c78-ac63-8af81df62dfb",
+                                "version": "1.*",
+                                "name": "Invoke REST API: POST",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceName": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "body": "",
+                                    "urlSuffix": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "99a72e7f-25e4-4576-bf38-22a42b995ed8",
+                                "version": "0.*",
+                                "name": "Query Azure Monitor alerts",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceNameARM": "",
+                                    "ResourceGroupName": "",
+                                    "ResourceType": "Microsoft.Insights/components",
+                                    "resourceName": "",
+                                    "alertRules": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "f1e4b0e6-017e-4819-8a48-ef19ae96e289",
+                                "version": "0.*",
+                                "name": "Query Work Items",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "queryId": "",
+                                    "maxThreshold": "0",
+                                    "minThreshold": "0"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "environmentTriggers": [],
+            "badgeUrl": "https://rmsprodscussu1.vsrm.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/public/Release/badge/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/2/3"
+        },
+        {
+            "id": 4,
+            "name": "UAT",
+            "rank": 2,
+            "owner": {
+                "displayName": "Josh Garverick",
+                "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "_links": {
+                    "avatar": {
+                        "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+                    }
+                },
+                "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "uniqueName": "jgarverick@outlook.com",
+                "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            },
+            "variables": {},
+            "variableGroups": [
+                2
+            ],
+            "preDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 10
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 1
+                }
+            },
+            "deployStep": {
+                "id": 15
+            },
+            "postDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": false,
+                        "isNotificationOn": false,
+                        "approver": {
+                            "displayName": "[Cloud Solutions]\\Cardstock Integration Approvers",
+                            "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "_links": {
+                                "avatar": {
+                                    "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjI2Mzc2MzMtMjA1OTUzMzg5OC0yODUyMDQyNzQ1LTYxODQ1MTcyNy0xLTM5MzE5MDQ5NjItMTU4MTkyMDgzOC0yOTU0Mzg3OTYzLTM4NTU0MzczODc"
+                                }
+                            },
+                            "id": "22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "uniqueName": "vstfs:///Classification/TeamProject/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f\\Cardstock Integration Approvers",
+                            "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "isContainer": true,
+                            "descriptor": "vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjI2Mzc2MzMtMjA1OTUzMzg5OC0yODUyMDQyNzQ1LTYxODQ1MTcyNy0xLTM5MzE5MDQ5NjItMTU4MTkyMDgzOC0yOTU0Mzg3OTYzLTM4NTU0MzczODc"
+                        },
+                        "id": 23
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 1440,
+                    "executionOrder": 2
+                }
+            },
+            "deployPhases": [
+                {
+                    "deploymentInput": {
+                        "parallelExecution": {
+                            "parallelExecutionType": "none"
+                        },
+                        "skipArtifactsDownload": false,
+                        "artifactsDownloadInput": {
+                            "downloadInputs": []
+                        },
+                        "queueId": 14,
+                        "demands": [],
+                        "enableAccessToken": false,
+                        "timeoutInMinutes": 0,
+                        "jobCancelTimeoutInMinutes": 1,
+                        "condition": "succeeded()",
+                        "overrideInputs": {}
+                    },
+                    "rank": 1,
+                    "phaseType": 1,
+                    "name": "Agent phase",
+                    "workflowTasks": []
+                }
+            ],
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": true,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [
+                {
+                    "name": "Integration",
+                    "conditionType": 2,
+                    "value": "4"
+                }
+            ],
+            "executionPolicy": {
+                "concurrencyCount": 1,
+                "queueDepthCount": 0
+            },
+            "schedules": [],
+            "currentRelease": {
+                "id": 0,
+                "url": "https://gamecorp-us.vsrm.visualstudio.com/Cloud%20Solutions/_apis/Release/releases/0",
+                "_links": {}
+            },
+            "retentionPolicy": {
+                "daysToKeep": 30,
+                "releasesToKeep": 3,
+                "retainBuild": true
+            },
+            "processParameters": {},
+            "properties": {},
+            "preDeploymentGates": {
+                "id": 0,
+                "gatesOptions": {
+                    "isEnabled": false,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": [
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "537fdb7a-a601-4537-aa70-92645a2b5ce4",
+                                "version": "1.*",
+                                "name": "Azure Function: ",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "function": "",
+                                    "key": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "queryParameters": "",
+                                    "body": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "9c3e8943-130d-4c78-ac63-8af81df62dfb",
+                                "version": "1.*",
+                                "name": "Invoke REST API: POST",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceName": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "body": "",
+                                    "urlSuffix": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "99a72e7f-25e4-4576-bf38-22a42b995ed8",
+                                "version": "0.*",
+                                "name": "Query Azure Monitor alerts",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceNameARM": "a8183851-554e-41a5-8e99-ea59cb64f581",
+                                    "ResourceGroupName": "gc-sandbox",
+                                    "ResourceType": "Microsoft.Insights/components",
+                                    "resourceName": "",
+                                    "alertRules": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "f1e4b0e6-017e-4819-8a48-ef19ae96e289",
+                                "version": "0.*",
+                                "name": "Query Work Items",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "queryId": "",
+                                    "maxThreshold": "0",
+                                    "minThreshold": "0"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "postDeploymentGates": {
+                "id": 16,
+                "gatesOptions": {
+                    "isEnabled": true,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": [
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "537fdb7a-a601-4537-aa70-92645a2b5ce4",
+                                "version": "1.*",
+                                "name": "Azure Function: ",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "function": "",
+                                    "key": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "queryParameters": "",
+                                    "body": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "9c3e8943-130d-4c78-ac63-8af81df62dfb",
+                                "version": "1.*",
+                                "name": "Invoke REST API: POST",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceName": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "body": "",
+                                    "urlSuffix": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "99a72e7f-25e4-4576-bf38-22a42b995ed8",
+                                "version": "0.*",
+                                "name": "Query Azure Monitor alerts",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceNameARM": "",
+                                    "ResourceGroupName": "",
+                                    "ResourceType": "Microsoft.Insights/components",
+                                    "resourceName": "",
+                                    "alertRules": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "f1e4b0e6-017e-4819-8a48-ef19ae96e289",
+                                "version": "0.*",
+                                "name": "Query Work Items",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "queryId": "",
+                                    "maxThreshold": "0",
+                                    "minThreshold": "0"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "environmentTriggers": [],
+            "badgeUrl": "https://rmsprodscussu1.vsrm.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/public/Release/badge/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/2/4"
+        },
+        {
+            "id": 5,
+            "name": "Staging",
+            "rank": 3,
+            "owner": {
+                "displayName": "Josh Garverick",
+                "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "_links": {
+                    "avatar": {
+                        "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+                    }
+                },
+                "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "uniqueName": "jgarverick@outlook.com",
+                "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            },
+            "variables": {},
+            "variableGroups": [
+                2
+            ],
+            "preDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 11
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 1
+                }
+            },
+            "deployStep": {
+                "id": 14
+            },
+            "postDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": false,
+                        "isNotificationOn": false,
+                        "approver": {
+                            "displayName": "[Cloud Solutions]\\Cardstock Integration Approvers",
+                            "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "_links": {
+                                "avatar": {
+                                    "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjI2Mzc2MzMtMjA1OTUzMzg5OC0yODUyMDQyNzQ1LTYxODQ1MTcyNy0xLTM5MzE5MDQ5NjItMTU4MTkyMDgzOC0yOTU0Mzg3OTYzLTM4NTU0MzczODc"
+                                }
+                            },
+                            "id": "22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "uniqueName": "vstfs:///Classification/TeamProject/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f\\Cardstock Integration Approvers",
+                            "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "isContainer": true,
+                            "descriptor": "vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjI2Mzc2MzMtMjA1OTUzMzg5OC0yODUyMDQyNzQ1LTYxODQ1MTcyNy0xLTM5MzE5MDQ5NjItMTU4MTkyMDgzOC0yOTU0Mzg3OTYzLTM4NTU0MzczODc"
+                        },
+                        "id": 22
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 1440,
+                    "executionOrder": 2
+                }
+            },
+            "deployPhases": [
+                {
+                    "deploymentInput": {
+                        "parallelExecution": {
+                            "parallelExecutionType": "none"
+                        },
+                        "skipArtifactsDownload": false,
+                        "artifactsDownloadInput": {
+                            "downloadInputs": []
+                        },
+                        "queueId": 14,
+                        "demands": [],
+                        "enableAccessToken": false,
+                        "timeoutInMinutes": 0,
+                        "jobCancelTimeoutInMinutes": 1,
+                        "condition": "succeeded()",
+                        "overrideInputs": {}
+                    },
+                    "rank": 1,
+                    "phaseType": 1,
+                    "name": "Agent phase",
+                    "workflowTasks": []
+                }
+            ],
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": true,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [
+                {
+                    "name": "UAT",
+                    "conditionType": 2,
+                    "value": "4"
+                }
+            ],
+            "executionPolicy": {
+                "concurrencyCount": 1,
+                "queueDepthCount": 0
+            },
+            "schedules": [],
+            "currentRelease": {
+                "id": 0,
+                "url": "https://gamecorp-us.vsrm.visualstudio.com/Cloud%20Solutions/_apis/Release/releases/0",
+                "_links": {}
+            },
+            "retentionPolicy": {
+                "daysToKeep": 30,
+                "releasesToKeep": 3,
+                "retainBuild": true
+            },
+            "processParameters": {},
+            "properties": {},
+            "preDeploymentGates": {
+                "id": 0,
+                "gatesOptions": {
+                    "isEnabled": false,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": [
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "537fdb7a-a601-4537-aa70-92645a2b5ce4",
+                                "version": "1.*",
+                                "name": "Azure Function: ",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "function": "",
+                                    "key": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "queryParameters": "",
+                                    "body": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "9c3e8943-130d-4c78-ac63-8af81df62dfb",
+                                "version": "1.*",
+                                "name": "Invoke REST API: POST",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceName": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "body": "",
+                                    "urlSuffix": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "99a72e7f-25e4-4576-bf38-22a42b995ed8",
+                                "version": "0.*",
+                                "name": "Query Azure Monitor alerts",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceNameARM": "a8183851-554e-41a5-8e99-ea59cb64f581",
+                                    "ResourceGroupName": "gc-sandbox",
+                                    "ResourceType": "Microsoft.Insights/components",
+                                    "resourceName": "",
+                                    "alertRules": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "f1e4b0e6-017e-4819-8a48-ef19ae96e289",
+                                "version": "0.*",
+                                "name": "Query Work Items",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "queryId": "",
+                                    "maxThreshold": "0",
+                                    "minThreshold": "0"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "postDeploymentGates": {
+                "id": 17,
+                "gatesOptions": {
+                    "isEnabled": true,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": [
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "537fdb7a-a601-4537-aa70-92645a2b5ce4",
+                                "version": "1.*",
+                                "name": "Azure Function: ",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "function": "",
+                                    "key": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "queryParameters": "",
+                                    "body": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "9c3e8943-130d-4c78-ac63-8af81df62dfb",
+                                "version": "1.*",
+                                "name": "Invoke REST API: POST",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceName": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "body": "",
+                                    "urlSuffix": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "99a72e7f-25e4-4576-bf38-22a42b995ed8",
+                                "version": "0.*",
+                                "name": "Query Azure Monitor alerts",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceNameARM": "",
+                                    "ResourceGroupName": "",
+                                    "ResourceType": "Microsoft.Insights/components",
+                                    "resourceName": "",
+                                    "alertRules": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "f1e4b0e6-017e-4819-8a48-ef19ae96e289",
+                                "version": "0.*",
+                                "name": "Query Work Items",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "queryId": "",
+                                    "maxThreshold": "0",
+                                    "minThreshold": "0"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "environmentTriggers": [],
+            "badgeUrl": "https://rmsprodscussu1.vsrm.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/public/Release/badge/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/2/5"
+        },
+        {
+            "id": 6,
+            "name": "Production",
+            "rank": 4,
+            "owner": {
+                "displayName": "Josh Garverick",
+                "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "_links": {
+                    "avatar": {
+                        "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+                    }
+                },
+                "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "uniqueName": "jgarverick@outlook.com",
+                "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            },
+            "variables": {},
+            "variableGroups": [
+                2
+            ],
+            "preDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 12
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 1
+                }
+            },
+            "deployStep": {
+                "id": 13
+            },
+            "postDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": false,
+                        "isNotificationOn": false,
+                        "approver": {
+                            "displayName": "[Cloud Solutions]\\Cardstock Integration Approvers",
+                            "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "_links": {
+                                "avatar": {
+                                    "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjI2Mzc2MzMtMjA1OTUzMzg5OC0yODUyMDQyNzQ1LTYxODQ1MTcyNy0xLTM5MzE5MDQ5NjItMTU4MTkyMDgzOC0yOTU0Mzg3OTYzLTM4NTU0MzczODc"
+                                }
+                            },
+                            "id": "22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "uniqueName": "vstfs:///Classification/TeamProject/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f\\Cardstock Integration Approvers",
+                            "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=22f569ee-7efd-4945-9bbb-c52dea4532b8",
+                            "isContainer": true,
+                            "descriptor": "vssgp.Uy0xLTktMTU1MTM3NDI0NS04NjI2Mzc2MzMtMjA1OTUzMzg5OC0yODUyMDQyNzQ1LTYxODQ1MTcyNy0xLTM5MzE5MDQ5NjItMTU4MTkyMDgzOC0yOTU0Mzg3OTYzLTM4NTU0MzczODc"
+                        },
+                        "id": 21
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 1440,
+                    "executionOrder": 2
+                }
+            },
+            "deployPhases": [
+                {
+                    "deploymentInput": {
+                        "parallelExecution": {
+                            "parallelExecutionType": "none"
+                        },
+                        "skipArtifactsDownload": false,
+                        "artifactsDownloadInput": {
+                            "downloadInputs": []
+                        },
+                        "queueId": 14,
+                        "demands": [],
+                        "enableAccessToken": false,
+                        "timeoutInMinutes": 0,
+                        "jobCancelTimeoutInMinutes": 1,
+                        "condition": "succeeded()",
+                        "overrideInputs": {}
+                    },
+                    "rank": 1,
+                    "phaseType": 1,
+                    "name": "Agent phase",
+                    "workflowTasks": []
+                }
+            ],
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": true,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [
+                {
+                    "name": "Staging",
+                    "conditionType": 2,
+                    "value": "4"
+                }
+            ],
+            "executionPolicy": {
+                "concurrencyCount": 1,
+                "queueDepthCount": 0
+            },
+            "schedules": [],
+            "currentRelease": {
+                "id": 0,
+                "url": "https://gamecorp-us.vsrm.visualstudio.com/Cloud%20Solutions/_apis/Release/releases/0",
+                "_links": {}
+            },
+            "retentionPolicy": {
+                "daysToKeep": 30,
+                "releasesToKeep": 3,
+                "retainBuild": true
+            },
+            "processParameters": {},
+            "properties": {},
+            "preDeploymentGates": {
+                "id": 0,
+                "gatesOptions": {
+                    "isEnabled": false,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": [
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "537fdb7a-a601-4537-aa70-92645a2b5ce4",
+                                "version": "1.*",
+                                "name": "Azure Function: ",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "function": "",
+                                    "key": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "queryParameters": "",
+                                    "body": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "9c3e8943-130d-4c78-ac63-8af81df62dfb",
+                                "version": "1.*",
+                                "name": "Invoke REST API: POST",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceName": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "body": "",
+                                    "urlSuffix": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "99a72e7f-25e4-4576-bf38-22a42b995ed8",
+                                "version": "0.*",
+                                "name": "Query Azure Monitor alerts",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceNameARM": "a8183851-554e-41a5-8e99-ea59cb64f581",
+                                    "ResourceGroupName": "gc-sandbox",
+                                    "ResourceType": "Microsoft.Insights/components",
+                                    "resourceName": "",
+                                    "alertRules": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "f1e4b0e6-017e-4819-8a48-ef19ae96e289",
+                                "version": "0.*",
+                                "name": "Query Work Items",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "queryId": "",
+                                    "maxThreshold": "0",
+                                    "minThreshold": "0"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "postDeploymentGates": {
+                "id": 18,
+                "gatesOptions": {
+                    "isEnabled": true,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": [
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "537fdb7a-a601-4537-aa70-92645a2b5ce4",
+                                "version": "1.*",
+                                "name": "Azure Function: ",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "function": "",
+                                    "key": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "queryParameters": "",
+                                    "body": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "9c3e8943-130d-4c78-ac63-8af81df62dfb",
+                                "version": "1.*",
+                                "name": "Invoke REST API: POST",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceName": "",
+                                    "method": "POST",
+                                    "headers": "{\n\"Content-Type\":\"application/json\", \n\"PlanUrl\": \"$(system.CollectionUri)\", \n\"ProjectId\": \"$(system.TeamProjectId)\", \n\"HubName\": \"$(system.HostType)\", \n\"PlanId\": \"$(system.PlanId)\", \n\"JobId\": \"$(system.JobId)\", \n\"TimelineId\": \"$(system.TimelineId)\", \n\"TaskInstanceId\": \"$(system.TaskInstanceId)\", \n\"AuthToken\": \"$(system.AccessToken)\"\n}",
+                                    "body": "",
+                                    "urlSuffix": "",
+                                    "waitForCompletion": "false",
+                                    "successCriteria": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "99a72e7f-25e4-4576-bf38-22a42b995ed8",
+                                "version": "0.*",
+                                "name": "Query Azure Monitor alerts",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "connectedServiceNameARM": "",
+                                    "ResourceGroupName": "",
+                                    "ResourceType": "Microsoft.Insights/components",
+                                    "resourceName": "",
+                                    "alertRules": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "tasks": [
+                            {
+                                "taskId": "f1e4b0e6-017e-4819-8a48-ef19ae96e289",
+                                "version": "0.*",
+                                "name": "Query Work Items",
+                                "enabled": false,
+                                "alwaysRun": false,
+                                "continueOnError": false,
+                                "timeoutInMinutes": 0,
+                                "definitionType": "task",
+                                "overrideInputs": {},
+                                "condition": "succeeded()",
+                                "inputs": {
+                                    "queryId": "",
+                                    "maxThreshold": "0",
+                                    "minThreshold": "0"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "environmentTriggers": [],
+            "badgeUrl": "https://rmsprodscussu1.vsrm.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/public/Release/badge/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/2/6"
+        }
+    ],
+    "artifacts": [
+        {
+            "sourceId": "41ce6a33-c17a-4afe-a9fe-b7f924dcd30f:586a48e3-1672-4982-a50d-db3fce3e85f0",
+            "type": "Git",
+            "alias": "Cardstock Source",
+            "definitionReference": {
+                "branches": {
+                    "id": "develop",
+                    "name": "develop"
+                },
+                "checkoutSubmodules": {
+                    "id": "",
+                    "name": ""
+                },
+                "defaultVersionSpecific": {
+                    "id": "",
+                    "name": ""
+                },
+                "defaultVersionType": {
+                    "id": "latestFromBranchType",
+                    "name": "Latest from default branch"
+                },
+                "definition": {
+                    "id": "586a48e3-1672-4982-a50d-db3fce3e85f0",
+                    "name": "Cardstock"
+                },
+                "fetchDepth": {
+                    "id": "1",
+                    "name": "1"
+                },
+                "gitLfsSupport": {
+                    "id": "",
+                    "name": ""
+                },
+                "project": {
+                    "id": "41ce6a33-c17a-4afe-a9fe-b7f924dcd30f",
+                    "name": "Cloud Solutions"
+                }
+            }
+        },
+        {
+            "sourceId": "a8183851-554e-41a5-8e99-ea59cb64f581:gamecorp.azurecr.io:vsts-agent",
+            "type": "AzureContainerRepository",
+            "alias": "Cardstock UI",
+            "definitionReference": {
+                "connection": {
+                    "id": "a8183851-554e-41a5-8e99-ea59cb64f581",
+                    "name": "Gamecorp Dev"
+                },
+                "defaultVersionType": {
+                    "id": "selectDuringReleaseCreationType",
+                    "name": "Specify at the time of release creation"
+                },
+                "definition": {
+                    "id": "vsts-agent",
+                    "name": "vsts-agent"
+                },
+                "registryurl": {
+                    "id": "gamecorp.azurecr.io",
+                    "name": "gamecorp"
+                },
+                "resourcegroup": {
+                    "id": "gc-sandbox",
+                    "name": "gc-sandbox"
+                }
+            }
+        },
+        {
+            "sourceId": "59f06e02-7189-43e9-9123-782e542c1339:gamecorp.azurecr.io:vsts-agent",
+            "type": "AzureContainerRepository",
+            "alias": "Inventory",
+            "definitionReference": {
+                "connection": {
+                    "id": "59f06e02-7189-43e9-9123-782e542c1339",
+                    "name": "Gamecorp Prod"
+                },
+                "defaultVersionType": {
+                    "id": "selectDuringReleaseCreationType",
+                    "name": "Specify at the time of release creation"
+                },
+                "definition": {
+                    "id": "vsts-agent",
+                    "name": "vsts-agent"
+                },
+                "registryurl": {
+                    "id": "gamecorp.azurecr.io",
+                    "name": "gamecorp"
+                },
+                "resourcegroup": {
+                    "id": "gc-sandbox",
+                    "name": "gc-sandbox"
+                }
+            }
+        },
+        {
+            "sourceId": "a8183851-554e-41a5-8e99-ea59cb64f581:gamecorp.azurecr.io:vsts-agent",
+            "type": "AzureContainerRepository",
+            "alias": "Messaging",
+            "definitionReference": {
+                "connection": {
+                    "id": "a8183851-554e-41a5-8e99-ea59cb64f581",
+                    "name": "Gamecorp Dev"
+                },
+                "defaultVersionType": {
+                    "id": "selectDuringReleaseCreationType",
+                    "name": "Specify at the time of release creation"
+                },
+                "definition": {
+                    "id": "vsts-agent",
+                    "name": "vsts-agent"
+                },
+                "registryurl": {
+                    "id": "gamecorp.azurecr.io",
+                    "name": "gamecorp"
+                },
+                "resourcegroup": {
+                    "id": "gc-sandbox",
+                    "name": "gc-sandbox"
+                }
+            }
+        },
+        {
+            "sourceId": "59f06e02-7189-43e9-9123-782e542c1339:gamecorp.azurecr.io:vsts-agent",
+            "type": "AzureContainerRepository",
+            "alias": "Trading",
+            "definitionReference": {
+                "connection": {
+                    "id": "59f06e02-7189-43e9-9123-782e542c1339",
+                    "name": "Gamecorp Prod"
+                },
+                "defaultVersionType": {
+                    "id": "selectDuringReleaseCreationType",
+                    "name": "Specify at the time of release creation"
+                },
+                "definition": {
+                    "id": "vsts-agent",
+                    "name": "vsts-agent"
+                },
+                "registryurl": {
+                    "id": "gamecorp.azurecr.io",
+                    "name": "gamecorp"
+                },
+                "resourcegroup": {
+                    "id": "gc-sandbox",
+                    "name": "gc-sandbox"
+                }
+            },
+            "isPrimary": true
+        }
+    ],
+    "triggers": [],
+    "releaseNameFormat": "Release-$(rev:r)",
+    "tags": [],
+    "properties": {
+        "DefinitionCreationSource": {
+            "$type": "System.String",
+            "$value": "ReleaseNew"
+        }
+    },
+    "id": 2,
+    "name": "Cardstock Runway",
+    "path": "\\",
+    "projectReference": null,
+    "url": "https://gamecorp-us.vsrm.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_apis/Release/definitions/2",
+    "_links": {
+        "self": {
+            "href": "https://gamecorp-us.vsrm.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_apis/Release/definitions/2"
+        },
+        "web": {
+            "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_release?definitionId=2"
+        }
+    }
+}

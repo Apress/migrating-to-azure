@@ -1,0 +1,417 @@
+{
+    "source": 2,
+    "revision": 2,
+    "description": null,
+    "createdBy": {
+        "displayName": "Josh Garverick",
+        "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "_links": {
+            "avatar": {
+                "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            }
+        },
+        "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "uniqueName": "jgarverick@outlook.com",
+        "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+    },
+    "createdOn": "2018-01-07T01:10:02.920Z",
+    "modifiedBy": {
+        "displayName": "Josh Garverick",
+        "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "_links": {
+            "avatar": {
+                "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            }
+        },
+        "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "uniqueName": "jgarverick@outlook.com",
+        "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+    },
+    "modifiedOn": "2018-01-08T02:02:20.987Z",
+    "isDeleted": false,
+    "variables": {},
+    "variableGroups": [],
+    "environments": [
+        {
+            "id": 1,
+            "name": "Dev Subscription",
+            "rank": 1,
+            "owner": {
+                "displayName": "Josh Garverick",
+                "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "_links": {
+                    "avatar": {
+                        "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+                    }
+                },
+                "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "uniqueName": "jgarverick@outlook.com",
+                "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            },
+            "variables": {
+                "Effect": {
+                    "value": "audit"
+                }
+            },
+            "variableGroups": [],
+            "preDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 1
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 1
+                }
+            },
+            "deployStep": {
+                "id": 4
+            },
+            "postDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 5
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 2
+                }
+            },
+            "deployPhases": [
+                {
+                    "deploymentInput": {
+                        "parallelExecution": {
+                            "parallelExecutionType": "none"
+                        },
+                        "skipArtifactsDownload": false,
+                        "artifactsDownloadInput": {
+                            "downloadInputs": []
+                        },
+                        "queueId": 14,
+                        "demands": [],
+                        "enableAccessToken": false,
+                        "timeoutInMinutes": 0,
+                        "jobCancelTimeoutInMinutes": 1,
+                        "condition": "succeeded()",
+                        "overrideInputs": {}
+                    },
+                    "rank": 1,
+                    "phaseType": 1,
+                    "name": "Agent phase",
+                    "workflowTasks": [
+                        {
+                            "taskId": "a8515ec8-7254-4ffd-912c-86772e2b5962",
+                            "version": "2.*",
+                            "name": "Replace tokens in **/*.json",
+                            "refName": "replacetokens1",
+                            "enabled": true,
+                            "alwaysRun": false,
+                            "continueOnError": false,
+                            "timeoutInMinutes": 0,
+                            "definitionType": "task",
+                            "overrideInputs": {},
+                            "condition": "succeeded()",
+                            "inputs": {
+                                "rootDirectory": "",
+                                "targetFiles": "**/*.json",
+                                "encoding": "auto",
+                                "writeBOM": "true",
+                                "actionOnMissing": "warn",
+                                "keepToken": "false",
+                                "tokenPrefix": "#{",
+                                "tokenSuffix": "}#",
+                                "emptyValue": "(empty)"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [
+                {
+                    "name": "ReleaseStarted",
+                    "conditionType": 1,
+                    "value": ""
+                }
+            ],
+            "executionPolicy": {
+                "concurrencyCount": 0,
+                "queueDepthCount": 0
+            },
+            "schedules": [],
+            "currentRelease": {
+                "id": 0,
+                "url": "https://gamecorp-us.vsrm.visualstudio.com/Cloud%20Solutions/_apis/Release/releases/0",
+                "_links": {}
+            },
+            "retentionPolicy": {
+                "daysToKeep": 30,
+                "releasesToKeep": 3,
+                "retainBuild": true
+            },
+            "processParameters": {},
+            "properties": {},
+            "preDeploymentGates": {
+                "id": 0,
+                "gatesOptions": {
+                    "isEnabled": false,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": []
+            },
+            "postDeploymentGates": {
+                "id": 0,
+                "gatesOptions": {
+                    "isEnabled": false,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": []
+            },
+            "environmentTriggers": [],
+            "badgeUrl": "https://rmsprodscussu1.vsrm.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/public/Release/badge/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/1/1"
+        },
+        {
+            "id": 2,
+            "name": "Prod Subscription",
+            "rank": 2,
+            "owner": {
+                "displayName": "Josh Garverick",
+                "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "_links": {
+                    "avatar": {
+                        "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+                    }
+                },
+                "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "uniqueName": "jgarverick@outlook.com",
+                "imageUrl": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+                "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            },
+            "variables": {
+                "Effect": {
+                    "value": "deny"
+                }
+            },
+            "variableGroups": [],
+            "preDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 2
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 1
+                }
+            },
+            "deployStep": {
+                "id": 3
+            },
+            "postDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 6
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 2
+                }
+            },
+            "deployPhases": [
+                {
+                    "deploymentInput": {
+                        "parallelExecution": {
+                            "parallelExecutionType": "none"
+                        },
+                        "skipArtifactsDownload": false,
+                        "artifactsDownloadInput": {
+                            "downloadInputs": []
+                        },
+                        "queueId": 14,
+                        "demands": [],
+                        "enableAccessToken": false,
+                        "timeoutInMinutes": 0,
+                        "jobCancelTimeoutInMinutes": 1,
+                        "condition": "succeeded()",
+                        "overrideInputs": {}
+                    },
+                    "rank": 1,
+                    "phaseType": 1,
+                    "name": "Agent phase",
+                    "workflowTasks": []
+                }
+            ],
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [
+                {
+                    "name": "Dev Subscription",
+                    "conditionType": 2,
+                    "value": "4"
+                }
+            ],
+            "executionPolicy": {
+                "concurrencyCount": 0,
+                "queueDepthCount": 0
+            },
+            "schedules": [],
+            "currentRelease": {
+                "id": 0,
+                "url": "https://gamecorp-us.vsrm.visualstudio.com/Cloud%20Solutions/_apis/Release/releases/0",
+                "_links": {}
+            },
+            "retentionPolicy": {
+                "daysToKeep": 30,
+                "releasesToKeep": 3,
+                "retainBuild": true
+            },
+            "processParameters": {},
+            "properties": {},
+            "preDeploymentGates": {
+                "id": 0,
+                "gatesOptions": {
+                    "isEnabled": false,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": []
+            },
+            "postDeploymentGates": {
+                "id": 0,
+                "gatesOptions": {
+                    "isEnabled": false,
+                    "timeout": 1440,
+                    "samplingInterval": 15,
+                    "stabilizationTime": 15,
+                    "minimumSuccessDuration": 0
+                },
+                "gates": []
+            },
+            "environmentTriggers": [],
+            "badgeUrl": "https://rmsprodscussu1.vsrm.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/_apis/public/Release/badge/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/1/2"
+        }
+    ],
+    "artifacts": [
+        {
+            "sourceId": "41ce6a33-c17a-4afe-a9fe-b7f924dcd30f:1",
+            "type": "Build",
+            "alias": "Azure Policy CI",
+            "definitionReference": {
+                "artifactSourceDefinitionUrl": {
+                    "id": "https://gamecorp-us.visualstudio.com/_permalink/_build/index?collectionId=8fbba6c6-bfc4-41b0-91b1-4094cba03358&projectId=41ce6a33-c17a-4afe-a9fe-b7f924dcd30f&definitionId=1",
+                    "name": ""
+                },
+                "defaultVersionBranch": {
+                    "id": "",
+                    "name": ""
+                },
+                "defaultVersionSpecific": {
+                    "id": "",
+                    "name": ""
+                },
+                "defaultVersionTags": {
+                    "id": "",
+                    "name": ""
+                },
+                "defaultVersionType": {
+                    "id": "latestType",
+                    "name": "Latest"
+                },
+                "definition": {
+                    "id": "1",
+                    "name": "Azure Policy CI"
+                },
+                "project": {
+                    "id": "41ce6a33-c17a-4afe-a9fe-b7f924dcd30f",
+                    "name": "Cloud Solutions"
+                }
+            },
+            "isPrimary": true
+        }
+    ],
+    "triggers": [],
+    "releaseNameFormat": "Release-$(rev:r)",
+    "tags": [],
+    "properties": {
+        "DefinitionCreationSource": {
+            "$type": "System.String",
+            "$value": "ReleaseNew"
+        }
+    },
+    "id": 1,
+    "name": "Policy Deployment",
+    "path": "\\",
+    "projectReference": null,
+    "url": "https://gamecorp-us.vsrm.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_apis/Release/definitions/1",
+    "_links": {
+        "self": {
+            "href": "https://gamecorp-us.vsrm.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_apis/Release/definitions/1"
+        },
+        "web": {
+            "href": "https://tfsprodcus2.visualstudio.com/A8fbba6c6-bfc4-41b0-91b1-4094cba03358/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_release?definitionId=1"
+        }
+    }
+}

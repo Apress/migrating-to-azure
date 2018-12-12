@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+  "title": "VS Remote Debugging Tools",
+  "description": "Installs VS2015 and VS2017 remote debugging utilities.",
+  "publisher": "Gamecorp",
+  "tags": [
+    "Visual Studio",
+    "Debugging",
+    "Remote Debugging"
+  ],
+  "iconUri": "https://msdnshared.blob.core.windows.net/media/2017/03/vs-for-mac-logo-caption2.png",
+  "targetOsType": "Windows",
+  "runCommand": {
+    "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./InstallVSRT.ps1 ', 'vsremotedebuggingtools', '\"')]"
+  }
+}

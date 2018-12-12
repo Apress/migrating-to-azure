@@ -1,0 +1,16 @@
+version: "3"
+services:
+  sql:
+    build:
+      context: sql/
+    ports:
+      - 1433:1433
+  sonar:
+    build:
+      context: sonar/
+    environment: 
+      SONARQUBE_JDBC_USERNAME: "sonar"
+      SONARQUBE_JDBC_PASSWORD: "s0nArqub3"
+      SONARQUBE_JDBC_URL: "jdbc:sqlserver://sql;databaseName=sonar"
+    depends_on:
+      - sql

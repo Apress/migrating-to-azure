@@ -1,0 +1,6 @@
+https://frankenbuild.net/agents/1/
+https://frankenbuild.net/agents/2/
+https://frankenbuild.net/agents/3/
+https://frankenbuild.net/about/
+https://mvp-buffalo-events-gabc-buffalo.azurewebsites.net/
+https://mvp-buffalo-events-gabc-buffalo.azurewebsites.net/Schedule/

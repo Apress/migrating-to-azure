@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "ab-test/{name}",
+      "connection": "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING"
+    },
+    {
+      "type": "documentDB",
+      "name": "$return",
+      "databaseName": "Benchmarking",
+      "collectionName": "BenchmarkResults",
+      "createIfNotExists": false,
+      "connection": "gc-sandbox_DOCUMENTDB",
+      "direction": "out",
+      "partitionKey": "/RunId"
+    }
+  ],
+  "disabled": false
+}

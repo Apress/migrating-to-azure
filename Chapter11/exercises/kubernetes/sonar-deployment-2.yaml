@@ -1,0 +1,75 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: 2018-06-21T20:20:39Z
+  generation: 1
+  labels:
+    k8s-app: sonar
+  name: sonar
+  namespace: default
+  resourceVersion: "6187511"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/sonar
+  uid: 9071f948-7590-11e8-94c4-0a58ac1f0bf2
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      k8s-app: sonar
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        k8s-app: sonar
+      name: sonar
+    spec:
+      containers:
+      - image: gamecorp.azurecr.io/sonarqube
+        imagePullPolicy: Always
+        name: sonar
+        resources: {}
+        volumeMounts:
+        - mountPath: "/mnt/sonarqube/extensions"
+          name: azure
+        securityContext:
+          privileged: true
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      volumes:
+      - name: azure
+        azureFile:
+          secretName: azure-secret
+          shareName: sonarqube
+          readOnly: false
+      imagePullSecrets:
+      - name: acr-secret
+      restartPolicy: Always
+      schedulerName: default-scheduler
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: 2018-06-21T20:21:28Z
+    lastUpdateTime: 2018-06-21T20:21:28Z
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  - lastTransitionTime: 2018-06-21T20:20:39Z
+    lastUpdateTime: 2018-06-21T20:21:28Z
+    message: ReplicaSet "sonar-65d95b4d46" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  observedGeneration: 1
+  readyReplicas: 1
+  replicas: 1
+  updatedReplicas: 1

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: Wadeck
+Build-Jdk: 1.8.0_144
+Extension-Name: subversion
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: subversion
+Implementation-Version: 2.10.3
+Group-Id: org.jenkins-ci.plugins
+Short-Name: subversion
+Long-Name: Jenkins Subversion Plug-in
+Url: https://wiki.jenkins.io/display/JENKINS/Subversion+Plugin
+Plugin-Version: 2.10.3
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Mask-Classes: com.trilead.ssh2.
+Plugin-Dependencies: workflow-scm-step:1.14.2,credentials:2.1.15,mapdb
+ -api:1.0.1.0,scm-api:2.0.8,ssh-credentials:1.11
+Plugin-Developers: 
+

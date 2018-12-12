@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='msbuild' version='1.29'><l:dependency name='Jenkins MSBuild Plugin' groupId='org.jenkins-ci.plugins' artifactId='msbuild' version='1.29' url='http://wiki.jenkins-ci.org/display/JENKINS/MSBuild+Plugin'><l:description>Allows using MSBuild to build .NET projects</l:description><l:license name='MIT license' url=''/></l:dependency></l:dependencies>

@@ -1,0 +1,181 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>2.29</version>
+    </parent>
+
+    <artifactId>periodicbackup</artifactId>
+    <name>Periodic Backup</name>
+    <version>1.5</version>
+    <packaging>hpi</packaging>
+
+    <scm>
+        <connection>scm:git:ssh://github.com/jenkinsci/periodicbackup-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/jenkinsci/periodicbackup-plugin.git</developerConnection>
+        <url>https://github.com/jenkinsci/periodicbackup-plugin.git</url>
+      <tag>periodicbackup-1.5</tag>
+  </scm>
+
+    <developers>
+        <developer>
+            <name>Tomasz Blaszczynski</name>
+            <email>tomasz.blaszczynski@gmail.com</email>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <name>Emanuele Zattin</name>
+            <email>emanuelez@gmail.com</email>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <name>Johno Crawford</name>
+            <email>johno.crawford@gmail.com</email>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <name>Oleg Nenashev</name>
+            <id>oleg_nenashev</id>
+            <email>o.v.nenashev@gmail.com</email>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-archiver</artifactId>
+            <version>2.2</version>
+        </dependency>
+        <!-- PLXCOMP-194: force plexus-utils for memory leak fix -->
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-utils</artifactId>
+            <version>3.0.10</version>
+        </dependency>
+        <dependency>
+        	<groupId>org.hamcrest</groupId>
+        	<artifactId>hamcrest-all</artifactId>
+        	<version>1.3</version>
+        	<scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <distributionManagement>
+        <site>
+            <id>github-project-site</id>
+            <url>gitsite:git@github.com/jenkinsci/periodicbackup-plugin</url>
+        </site>
+    </distributionManagement>
+
+    <properties>
+        <!--For parent POM-->
+        <jenkins.version>1.609.3</jenkins.version>
+        <java.level>6</java.level>
+    </properties>
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.scm</groupId>
+                <artifactId>maven-scm-provider-gitexe</artifactId>
+                <version>1.9.5</version>
+            </extension>
+            <extension>
+                <groupId>org.apache.maven.scm</groupId>
+                <artifactId>maven-scm-manager-plexus</artifactId>
+                <version>1.9.5</version>
+            </extension>
+            <extension>
+                <groupId>org.kathrynhuxtable.maven.wagon</groupId>
+                <artifactId>wagon-gitsite</artifactId>
+                <version>0.3.1</version>
+            </extension>
+        </extensions>
+        <plugins>
+          <plugin>
+            <artifactId>maven-site-plugin</artifactId>
+            <version>3.6</version>
+          </plugin>
+        </plugins>
+        
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <artifactId>maven-changelog-plugin</artifactId>
+                <version>2.3</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.17</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-jxr-plugin</artifactId>
+                <version>2.5</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.8</version>
+            </plugin>
+            <plugin>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.9</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>cim</report>
+                            <report>distribution-management</report>
+                            <report>index</report>
+                            <report>issue-tracking</report>
+                            <report>license</report>
+                            <report>mailing-list</report>
+                            <report>project-team</report>
+                            <report>scm</report>
+                            <report>summary</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <!-- TODO: Pick 2.7+ once MCOBERTURA-203 is fixed -->
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.6</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>javancss-maven-plugin</artifactId>
+                <version>2.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jdepend-maven-plugin</artifactId>
+                <version>2.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>taglist-maven-plugin</artifactId>
+                <version>2.4</version>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>https://repo.jenkins-ci.org/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>  
+  
+

@@ -1,0 +1,11 @@
+{
+  "functionTimeout": "00:05:00",
+  "healthMonitor": {
+    "enabled": true,
+    "healthCheckInterval": "00:00:10",
+    "healthCheckWindow": "00:02:00",
+    "healthCheckThreshold": 6,
+    "counterThreshold": 0.8
+  },
+  "functions": ["BlobTriggerCSharp1"]
+}

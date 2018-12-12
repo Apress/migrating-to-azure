@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.8.0 ()
+  creationTimestamp: null
+  labels:
+    io.kompose.service: agent
+  name: agent
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: agent
+    spec:
+      containers:
+      - env:
+        - name: VSTS_ACCOUNT
+          value: gamecorp-us
+        - name: VSTS_TOKEN
+          value: 2fucrht7wsofbksumefwftlrj6yx26igy5cig4xm74cw6alpfd5a
+        image: gamecorp.azurecr.io/vsts-agent
+        imagePullSecrets:
+        - name: acr-secret
+        name: agent
+        resources: {}
+      restartPolicy: Always
+status: {}

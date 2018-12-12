@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: tom
+Build-Jdk: 1.8.0_112
+Extension-Name: thinBackup
+Specification-Title: Backs up the most important global and job specif
+ ic configuration files.
+Implementation-Title: thinBackup
+Implementation-Version: 1.9
+Plugin-Class: org.jvnet.hudson.plugins.thinbackup.ThinBackupPluginImpl
+Group-Id: org.jvnet.hudson.plugins
+Short-Name: thinBackup
+Long-Name: ThinBackup
+Url: https://wiki.jenkins-ci.org/display/JENKINS/thinBackup
+Plugin-Version: 1.9
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+PluginFirstClassLoader: true
+Plugin-Developers: Thomas Fuerer:tofuatjava:tfuerer.javanet@gmail.com,
+ Matthias Steinkogler:alienllama:alienllama@gmail.com
+

@@ -1,0 +1,230 @@
+{
+    "options": [
+        {
+            "enabled": false,
+            "definition": {
+                "id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+            },
+            "inputs": {
+                "branchFilters": "[\"+refs/heads/*\"]",
+                "additionalFields": "{}"
+            }
+        },
+        {
+            "enabled": false,
+            "definition": {
+                "id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+            },
+            "inputs": {
+                "workItemType": "830526",
+                "assignToRequestor": "true",
+                "additionalFields": "{}"
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "branchFilters": [
+                "+refs/heads/master"
+            ],
+            "pathFilters": [
+                "+Administration/policy"
+            ],
+            "batchChanges": false,
+            "maxConcurrentBuildsPerBranch": 1,
+            "pollingInterval": 0,
+            "triggerType": 2
+        }
+    ],
+    "variables": {
+        "Effect": {
+            "value": "audit"
+        },
+        "system.debug": {
+            "value": "false",
+            "allowOverride": true
+        }
+    },
+    "retentionRules": [
+        {
+            "branches": [
+                "+refs/heads/*"
+            ],
+            "artifacts": [],
+            "artifactTypesToDelete": [
+                "FilePath",
+                "SymbolStore"
+            ],
+            "daysToKeep": 10,
+            "minimumToKeep": 1,
+            "deleteBuildRecord": true,
+            "deleteTestResults": true
+        }
+    ],
+    "properties": {},
+    "tags": [],
+    "metrics": [
+        {
+            "name": "CurrentBuildsInQueue",
+            "scope": "refs/heads/master",
+            "intValue": 0
+        },
+        {
+            "name": "CurrentBuildsInProgress",
+            "scope": "refs/heads/master",
+            "intValue": 0
+        }
+    ],
+    "_links": {
+        "self": {
+            "href": "https://gamecorp-us.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_apis/build/Definitions/1?revision=14"
+        },
+        "web": {
+            "href": "https://gamecorp-us.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_build/definition?definitionId=1"
+        },
+        "editor": {
+            "href": "https://gamecorp-us.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_build/designer?id=1&_a=edit-build-definition"
+        }
+    },
+    "jobAuthorizationScope": 1,
+    "jobTimeoutInMinutes": 60,
+    "jobCancelTimeoutInMinutes": 5,
+    "process": {
+        "phases": [
+            {
+                "steps": [
+                    {
+                        "environment": {},
+                        "enabled": true,
+                        "continueOnError": false,
+                        "alwaysRun": false,
+                        "displayName": "Replace tokens in **/*.json",
+                        "timeoutInMinutes": 0,
+                        "condition": "succeeded()",
+                        "refName": "replacetokens1",
+                        "task": {
+                            "id": "a8515ec8-7254-4ffd-912c-86772e2b5962",
+                            "versionSpec": "2.*",
+                            "definitionType": "task"
+                        },
+                        "inputs": {
+                            "rootDirectory": "Administration/policy",
+                            "targetFiles": "**/*.json",
+                            "encoding": "auto",
+                            "writeBOM": "true",
+                            "actionOnMissing": "warn",
+                            "keepToken": "false",
+                            "tokenPrefix": "#{",
+                            "tokenSuffix": "}#",
+                            "emptyValue": "(empty)",
+                            "escapeChar": "",
+                            "charsToEscape": ""
+                        }
+                    },
+                    {
+                        "environment": {},
+                        "enabled": true,
+                        "continueOnError": false,
+                        "alwaysRun": false,
+                        "displayName": "Azure CLI ",
+                        "timeoutInMinutes": 0,
+                        "condition": "succeeded()",
+                        "task": {
+                            "id": "46e4be58-730b-4389-8a2f-ea10b3e5e815",
+                            "versionSpec": "1.*",
+                            "definitionType": "task"
+                        },
+                        "inputs": {
+                            "connectedServiceNameARM": "a8183851-554e-41a5-8e99-ea59cb64f581",
+                            "scriptLocation": "inlineScript",
+                            "scriptPath": "",
+                            "inlineScript": "az group deployment validate --resource-group ExampleGroup --template-file azurepolicy.json --parameters @azurepolicy.parameters.json",
+                            "args": "",
+                            "cwd": "Administration/policy/admin/Tagging",
+                            "failOnStandardError": "true"
+                        }
+                    }
+                ],
+                "name": "Phase 1",
+                "refName": "Phase_1",
+                "condition": "succeeded()",
+                "target": {
+                    "executionOptions": {
+                        "type": 0
+                    },
+                    "allowScriptsAuthAccessOption": false,
+                    "type": 1
+                },
+                "jobAuthorizationScope": "projectCollection",
+                "jobCancelTimeoutInMinutes": 1
+            }
+        ],
+        "type": 1
+    },
+    "repository": {
+        "properties": {
+            "cleanOptions": "0",
+            "labelSources": "0",
+            "labelSourcesFormat": "$(build.buildNumber)",
+            "reportBuildStatus": "true",
+            "gitLfsSupport": "false",
+            "skipSyncSource": "false",
+            "checkoutNestedSubmodules": "false",
+            "fetchDepth": "0"
+        },
+        "id": "37274532-c98e-4356-87bc-71b609624144",
+        "type": "TfsGit",
+        "name": "Cloud Solutions",
+        "url": "https://gamecorp-us.visualstudio.com/Cloud%20Solutions/_git/Cloud%20Solutions",
+        "defaultBranch": "refs/heads/master",
+        "clean": "false",
+        "checkoutSubmodules": false
+    },
+    "processParameters": {},
+    "quality": 1,
+    "authoredBy": {
+        "displayName": "Josh Garverick",
+        "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "_links": {
+            "avatar": {
+                "href": "https://gamecorp-us.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            }
+        },
+        "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "uniqueName": "jgarverick@outlook.com",
+        "imageUrl": "https://gamecorp-us.visualstudio.com/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+    },
+    "drafts": [],
+    "queue": {
+        "_links": {
+            "self": {
+                "href": "https://gamecorp-us.visualstudio.com/_apis/build/Queues/11"
+            }
+        },
+        "id": 11,
+        "name": "Default",
+        "url": "https://gamecorp-us.visualstudio.com/_apis/build/Queues/11",
+        "pool": {
+            "id": 1,
+            "name": "Default"
+        }
+    },
+    "id": 1,
+    "name": "Azure Policy CI",
+    "url": "https://gamecorp-us.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_apis/build/Definitions/1?revision=14",
+    "uri": "vstfs:///Build/Definition/1",
+    "path": "\\",
+    "type": 2,
+    "queueStatus": 0,
+    "revision": 14,
+    "createdDate": "2018-04-15T01:49:55.590Z",
+    "project": {
+        "id": "41ce6a33-c17a-4afe-a9fe-b7f924dcd30f",
+        "name": "Cloud Solutions",
+        "url": "https://gamecorp-us.visualstudio.com/_apis/projects/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f",
+        "state": "wellFormed",
+        "revision": 38,
+        "visibility": 0
+    }
+}

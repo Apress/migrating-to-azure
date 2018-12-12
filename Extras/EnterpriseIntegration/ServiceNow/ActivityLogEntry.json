@@ -1,0 +1,235 @@
+﻿{
+  "type": "object",
+  "properties": {
+    "authorization": {
+      "type": "object",
+      "properties": {
+        "action": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "string"
+        }
+      }
+    },
+    "caller": {
+      "type": "string"
+    },
+    "channels": {
+      "type": "string"
+    },
+    "claims": {
+      "type": "object",
+      "properties": {
+        "aud": {
+          "type": "string"
+        },
+        "iss": {
+          "type": "string"
+        },
+        "iat": {
+          "type": "string"
+        },
+        "nbf": {
+          "type": "string"
+        },
+        "exp": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/claims/authnclassreference": {
+          "type": "string"
+        },
+        "aio": {
+          "type": "string"
+        },
+        "altsecid": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/claims/authnmethodsreferences": {
+          "type": "string"
+        },
+        "appid": {
+          "type": "string"
+        },
+        "appidacr": {
+          "type": "string"
+        },
+        "e_exp": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": {
+          "type": "string"
+        },
+        "groups": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/identity/claims/identityprovider": {
+          "type": "string"
+        },
+        "ipaddr": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/identity/claims/objectidentifier": {
+          "type": "string"
+        },
+        "puid": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/identity/claims/scope": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/identity/claims/tenantid": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": {
+          "type": "string"
+        },
+        "uti": {
+          "type": "string"
+        },
+        "ver": {
+          "type": "string"
+        },
+        "wids": {
+          "type": "string"
+        }
+      }
+    },
+    "correlationId": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "eventDataId": {
+      "type": "string"
+    },
+    "eventName": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "localizedValue": {
+          "type": "string"
+        }
+      }
+    },
+    "category": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "localizedValue": {
+          "type": "string"
+        }
+      }
+    },
+    "eventTimestamp": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "level": {
+      "type": "string"
+    },
+    "operationId": {
+      "type": "string"
+    },
+    "operationName": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "localizedValue": {
+          "type": "string"
+        }
+      }
+    },
+    "resourceGroupName": {
+      "type": "string"
+    },
+    "resourceProviderName": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "localizedValue": {
+          "type": "string"
+        }
+      }
+    },
+    "resourceType": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "localizedValue": {
+          "type": "string"
+        }
+      }
+    },
+    "resourceId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "localizedValue": {
+          "type": "string"
+        }
+      }
+    },
+    "subStatus": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "localizedValue": {
+          "type": "string"
+        }
+      }
+    },
+    "submissionTimestamp": {
+      "type": "string"
+    },
+    "subscriptionId": {
+      "type": "string"
+    },
+    "properties": {
+      "type": "object",
+      "properties": {
+        "statusCode": {
+          "type": "string"
+        },
+        "serviceRequestId": {
+          "type": "string"
+        }
+      }
+    },
+    "relatedEvents": {
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,151 @@
+﻿{
+  "properties": {
+    "authorization": {
+      "properties": {
+        "action": {
+          "type": "string"
+        },
+        "evidence": {
+          "properties": {
+            "role": {
+              "type": "string"
+            }
+          },
+          "type": "object"
+        },
+        "scope": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "claims": {
+      "properties": {
+        "aio": {
+          "type": "string"
+        },
+        "altsecid": {
+          "type": "string"
+        },
+        "appid": {
+          "type": "string"
+        },
+        "appidacr": {
+          "type": "string"
+        },
+        "aud": {
+          "type": "string"
+        },
+        "e_exp": {
+          "type": "string"
+        },
+        "exp": {
+          "type": "string"
+        },
+        "groups": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/claims/authnclassreference": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/claims/authnmethodsreferences": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/identity/claims/identityprovider": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/identity/claims/objectidentifier": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/identity/claims/scope": {
+          "type": "string"
+        },
+        "http://schemas.microsoft.com/identity/claims/tenantid": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": {
+          "type": "string"
+        },
+        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": {
+          "type": "string"
+        },
+        "iat": {
+          "type": "string"
+        },
+        "ipaddr": {
+          "type": "string"
+        },
+        "iss": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "nbf": {
+          "type": "string"
+        },
+        "puid": {
+          "type": "string"
+        },
+        "uti": {
+          "type": "string"
+        },
+        "ver": {
+          "type": "string"
+        },
+        "wids": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "correlationId": {
+      "type": "string"
+    },
+    "httpRequest": {
+      "properties": {
+        "clientIpAddress": {
+          "type": "string"
+        },
+        "clientRequestId": {
+          "type": "string"
+        },
+        "method": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "operationName": {
+      "type": "string"
+    },
+    "resourceProvider": {
+      "type": "string"
+    },
+    "resourceUri": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "subscriptionId": {
+      "type": "string"
+    },
+    "tenantId": {
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

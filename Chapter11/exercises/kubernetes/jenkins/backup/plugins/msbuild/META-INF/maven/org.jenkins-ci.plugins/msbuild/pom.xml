@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jenkins-ci.plugins</groupId>
+        <artifactId>plugin</artifactId>
+        <version>2.36</version>
+    </parent>
+
+    <artifactId>msbuild</artifactId>
+    <packaging>hpi</packaging>
+    <version>1.29</version>
+    <name>Jenkins MSBuild Plugin</name>
+    <url>http://wiki.jenkins-ci.org/display/JENKINS/MSBuild+Plugin</url>
+    <description>Allows using MSBuild to build .NET projects</description>
+
+    <licenses>
+        <license>
+            <name>MIT license</name>
+            <comments>All source code is under the MIT license.</comments>
+        </license>
+    </licenses>
+    
+    <properties>
+      <jenkins.version>1.625</jenkins.version>
+    </properties>
+
+    <developers>
+        <developer>
+            <id>gbois</id>
+            <name>Gregory Boissinot</name>
+            <email>gregory.boissinot@gmail.com</email>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>kdsweeney</id>
+            <name>Kyle Sweeney</name>
+            <email>kyle.sweeney@valtech.com</email>
+        </developer>
+        <developer>
+            <id>marshall777</id>
+            <name>Lionel Cabasson</name>
+            <email>marshall777@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/jenkinsci/msbuild-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:jenkinsci/msbuild-plugin.git</developerConnection>
+        <tag>msbuild-1.29</tag>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>structs</artifactId>
+            <version>1.3</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </pluginRepository>
+    </pluginRepositories>
+</project>  
+  
+

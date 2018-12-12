@@ -1,0 +1,79 @@
+{
+    "policyDefinitions": [
+        {
+            "if": {
+                "field": "[concat('tags.','Cost Center')]",
+                "exists": "false"
+            },
+            "then": {
+                "effect": "append",
+                "details": [
+                    {
+                        "field": "[concat('tags.','Cost Center')]",
+                        "value": "[parameters('costCenter')]"
+                    }
+                ]
+            }
+        },
+        {
+            "if": {
+                "field": "[concat('tags.','Environment')]",
+                "exists": "false"
+            },
+            "then": {
+                "effect": "append",
+                "details": [
+                    {
+                        "field": "[concat('tags.','Environment')]",
+                        "value": "[parameters('environmentName')]"
+                    }
+                ]
+            }
+        },
+        {
+            "if": {
+                "field": "[concat('tags.','Region')]",
+                "exists": "false"
+            },
+            "then": {
+                "effect": "append",
+                "details": [
+                    {
+                        "field": "[concat('tags.','Region')]",
+                        "value": "[parameters('region')]"
+                    }
+                ]
+            }
+        },
+        {
+            "if": {
+                "field": "[concat('tags.','Project')]",
+                "exists": "false"
+            },
+            "then": {
+                "effect": "append",
+                "details": [
+                    {
+                        "field": "[concat('tags.','Project')]",
+                        "value": "[parameters('projectId')]"
+                    }
+                ]
+            }
+        },
+        {
+            "if": {
+                "field": "[concat('tags.','LOB')]",
+                "exists": "false"
+            },
+            "then": {
+                "effect": "append",
+                "details": [
+                    {
+                        "field": "[concat('tags.','LOB')]",
+                        "value": "[parameters('lineOfBusiness')]"
+                    }
+                ]
+            }
+        }
+    ]
+}

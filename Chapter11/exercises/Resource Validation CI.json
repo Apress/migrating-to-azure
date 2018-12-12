@@ -1,0 +1,268 @@
+{
+    "options": [
+        {
+            "enabled": false,
+            "definition": {
+                "id": "5d58cc01-7c75-450c-be18-a388ddb129ec"
+            },
+            "inputs": {
+                "branchFilters": "[\"+refs/heads/*\"]",
+                "additionalFields": "{}"
+            }
+        },
+        {
+            "enabled": false,
+            "definition": {
+                "id": "a9db38f9-9fdc-478c-b0f9-464221e58316"
+            },
+            "inputs": {
+                "workItemType": "830526",
+                "assignToRequestor": "true",
+                "additionalFields": "{}"
+            }
+        }
+    ],
+    "triggers": [
+        {
+            "branchFilters": [
+                "+refs/heads/develop"
+            ],
+            "pathFilters": [
+                "+/Infrastruture",
+                "-/"
+            ],
+            "batchChanges": false,
+            "maxConcurrentBuildsPerBranch": 1,
+            "pollingInterval": 0,
+            "triggerType": 2
+        }
+    ],
+    "variables": {
+        "system.debug": {
+            "value": "false",
+            "allowOverride": true
+        }
+    },
+    "retentionRules": [
+        {
+            "branches": [
+                "+refs/heads/*"
+            ],
+            "artifacts": [],
+            "artifactTypesToDelete": [
+                "FilePath",
+                "SymbolStore"
+            ],
+            "daysToKeep": 10,
+            "minimumToKeep": 1,
+            "deleteBuildRecord": true,
+            "deleteTestResults": true
+        }
+    ],
+    "properties": {},
+    "tags": [],
+    "_links": {
+        "self": {
+            "href": "https://gamecorp-us.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_apis/build/Definitions/4?revision=2"
+        },
+        "web": {
+            "href": "https://gamecorp-us.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_build/definition?definitionId=4"
+        },
+        "editor": {
+            "href": "https://gamecorp-us.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_build/designer?id=4&_a=edit-build-definition"
+        }
+    },
+    "jobAuthorizationScope": 1,
+    "jobTimeoutInMinutes": 60,
+    "jobCancelTimeoutInMinutes": 5,
+    "process": {
+        "phases": [
+            {
+                "steps": [
+                    {
+                        "environment": {},
+                        "enabled": true,
+                        "continueOnError": false,
+                        "alwaysRun": false,
+                        "displayName": "Azure Deployment:Create Or Update Resource Group action on GC-TEST-RG-1",
+                        "timeoutInMinutes": 0,
+                        "condition": "succeeded()",
+                        "task": {
+                            "id": "94a74903-f93f-4075-884f-dc11f34058b4",
+                            "versionSpec": "2.*",
+                            "definitionType": "task"
+                        },
+                        "inputs": {
+                            "ConnectedServiceName": "987adac4-b8cc-4835-9ff9-dba7ab62808f",
+                            "action": "Create Or Update Resource Group",
+                            "resourceGroupName": "GC-TEST-RG-1",
+                            "location": "East US",
+                            "templateLocation": "Linked artifact",
+                            "csmFileLink": "",
+                            "csmParametersFileLink": "",
+                            "csmFile": "Infrastructure/readme.md",
+                            "csmParametersFile": "",
+                            "overrideParameters": "",
+                            "deploymentMode": "Validation",
+                            "enableDeploymentPrerequisites": "None",
+                            "deploymentGroupEndpoint": "",
+                            "project": "",
+                            "deploymentGroupName": "",
+                            "copyAzureVMTags": "true",
+                            "outputVariable": "",
+                            "deploymentOutputs": ""
+                        }
+                    },
+                    {
+                        "environment": {},
+                        "enabled": true,
+                        "continueOnError": false,
+                        "alwaysRun": false,
+                        "displayName": "Azure Deployment:Create Or Update Resource Group action on GC-TEST-RG-2",
+                        "timeoutInMinutes": 0,
+                        "condition": "succeeded()",
+                        "task": {
+                            "id": "94a74903-f93f-4075-884f-dc11f34058b4",
+                            "versionSpec": "2.*",
+                            "definitionType": "task"
+                        },
+                        "inputs": {
+                            "ConnectedServiceName": "987adac4-b8cc-4835-9ff9-dba7ab62808f",
+                            "action": "Create Or Update Resource Group",
+                            "resourceGroupName": "GC-TEST-RG-2",
+                            "location": "East US 2",
+                            "templateLocation": "Linked artifact",
+                            "csmFileLink": "",
+                            "csmParametersFileLink": "",
+                            "csmFile": "Infrastructure/readme.md",
+                            "csmParametersFile": "",
+                            "overrideParameters": "",
+                            "deploymentMode": "Validation",
+                            "enableDeploymentPrerequisites": "None",
+                            "deploymentGroupEndpoint": "",
+                            "project": "",
+                            "deploymentGroupName": "",
+                            "copyAzureVMTags": "true",
+                            "outputVariable": "",
+                            "deploymentOutputs": ""
+                        }
+                    },
+                    {
+                        "environment": {},
+                        "enabled": true,
+                        "continueOnError": false,
+                        "alwaysRun": false,
+                        "displayName": "Azure Deployment:Create Or Update Resource Group action on GC-TEST-RG-3",
+                        "timeoutInMinutes": 0,
+                        "condition": "succeeded()",
+                        "task": {
+                            "id": "94a74903-f93f-4075-884f-dc11f34058b4",
+                            "versionSpec": "2.*",
+                            "definitionType": "task"
+                        },
+                        "inputs": {
+                            "ConnectedServiceName": "987adac4-b8cc-4835-9ff9-dba7ab62808f",
+                            "action": "Create Or Update Resource Group",
+                            "resourceGroupName": "GC-TEST-RG-3",
+                            "location": "East US 2",
+                            "templateLocation": "Linked artifact",
+                            "csmFileLink": "",
+                            "csmParametersFileLink": "",
+                            "csmFile": "Infrastructure/readme.md",
+                            "csmParametersFile": "",
+                            "overrideParameters": "",
+                            "deploymentMode": "Validation",
+                            "enableDeploymentPrerequisites": "None",
+                            "deploymentGroupEndpoint": "",
+                            "project": "",
+                            "deploymentGroupName": "",
+                            "copyAzureVMTags": "true",
+                            "outputVariable": "",
+                            "deploymentOutputs": ""
+                        }
+                    }
+                ],
+                "name": "Validate infrastructure as code",
+                "refName": "Phase_1",
+                "condition": "succeeded()",
+                "target": {
+                    "executionOptions": {
+                        "type": 0
+                    },
+                    "allowScriptsAuthAccessOption": false,
+                    "type": 1
+                },
+                "jobAuthorizationScope": "projectCollection",
+                "jobCancelTimeoutInMinutes": 1
+            }
+        ],
+        "type": 1
+    },
+    "repository": {
+        "properties": {
+            "cleanOptions": "0",
+            "labelSources": "0",
+            "labelSourcesFormat": "$(build.buildNumber)",
+            "reportBuildStatus": "true",
+            "gitLfsSupport": "false",
+            "skipSyncSource": "false",
+            "checkoutNestedSubmodules": "false",
+            "fetchDepth": "0"
+        },
+        "id": "586a48e3-1672-4982-a50d-db3fce3e85f0",
+        "type": "TfsGit",
+        "name": "Cardstock",
+        "url": "https://gamecorp-us.visualstudio.com/Cloud%20Solutions/_git/Cardstock",
+        "defaultBranch": "refs/heads/develop",
+        "clean": "false",
+        "checkoutSubmodules": false
+    },
+    "processParameters": {},
+    "quality": 1,
+    "authoredBy": {
+        "displayName": "Josh Garverick",
+        "url": "https://app.vssps.visualstudio.com/A4169d5f1-073e-44ad-aaef-d6767fe73900/_apis/Identities/5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "_links": {
+            "avatar": {
+                "href": "https://gamecorp-us.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+            }
+        },
+        "id": "5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "uniqueName": "jgarverick@outlook.com",
+        "imageUrl": "https://gamecorp-us.visualstudio.com/_api/_common/identityImage?id=5d2b12cd-2b3c-4080-a946-0f5bd859d436",
+        "descriptor": "aad.NzhmNjI4NDktNzM5MS03YzU0LTg0MGMtYWY0N2EwZmJlOTc1"
+    },
+    "drafts": [],
+    "queue": {
+        "_links": {
+            "self": {
+                "href": "https://gamecorp-us.visualstudio.com/_apis/build/Queues/14"
+            }
+        },
+        "id": 14,
+        "name": "Hosted VS2017",
+        "url": "https://gamecorp-us.visualstudio.com/_apis/build/Queues/14",
+        "pool": {
+            "id": 4,
+            "name": "Hosted VS2017",
+            "isHosted": true
+        }
+    },
+    "id": 4,
+    "name": "Resource Validation CI",
+    "url": "https://gamecorp-us.visualstudio.com/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f/_apis/build/Definitions/4?revision=2",
+    "uri": "vstfs:///Build/Definition/4",
+    "path": "\\Cardstock",
+    "type": 2,
+    "queueStatus": 0,
+    "revision": 2,
+    "createdDate": "2018-03-04T19:47:14.310Z",
+    "project": {
+        "id": "41ce6a33-c17a-4afe-a9fe-b7f924dcd30f",
+        "name": "Cloud Solutions",
+        "url": "https://gamecorp-us.visualstudio.com/_apis/projects/41ce6a33-c17a-4afe-a9fe-b7f924dcd30f",
+        "state": "wellFormed",
+        "revision": 38,
+        "visibility": 0
+    }
+}

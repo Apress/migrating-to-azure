@@ -1,0 +1,321 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "logicAppName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80,
+      "metadata": {
+        "description": "Name of the Logic App."
+      }
+    },
+    "logicAppLocation": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "allowedValues": [
+        "[resourceGroup().location]",
+        "eastasia",
+        "southeastasia",
+        "centralus",
+        "eastus",
+        "eastus2",
+        "westus",
+        "northcentralus",
+        "southcentralus",
+        "northeurope",
+        "westeurope",
+        "japanwest",
+        "japaneast",
+        "brazilsouth",
+        "australiaeast",
+        "australiasoutheast",
+        "southindia",
+        "centralindia",
+        "westindia",
+        "canadacentral",
+        "canadaeast",
+        "uksouth",
+        "ukwest",
+        "westcentralus",
+        "westus2"
+      ],
+      "metadata": {
+        "description": "Location of the Logic App."
+      }
+    },
+    "azureeventgrid_1_Connection_Name": {
+      "type": "string",
+      "defaultValue": "azureeventgrid"
+    },
+    "azureeventgrid_1_Connection_DisplayName": {
+      "type": "string",
+      "defaultValue": "live.com#jgarverick@outlook.com"
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "name": "[parameters('logicAppName')]",
+      "type": "Microsoft.Logic/workflows",
+      "location": "[parameters('logicAppLocation')]",
+      "tags": {
+        "displayName": "LogicApp"
+      },
+      "apiVersion": "2016-06-01",
+      "properties": {
+        "definition": {
+          "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+          "actions": {
+            "Parse_JSON": {
+              "type": "ParseJson",
+              "inputs": {
+                "content": "@triggerBody()?['data']",
+                "schema": {
+                  "properties": {
+                    "authorization": {
+                      "properties": {
+                        "action": {
+                          "type": "string"
+                        },
+                        "evidence": {
+                          "properties": {
+                            "role": {
+                              "type": "string"
+                            }
+                          },
+                          "type": "object"
+                        },
+                        "scope": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "claims": {
+                      "properties": {
+                        "aio": {
+                          "type": "string"
+                        },
+                        "altsecid": {
+                          "type": "string"
+                        },
+                        "appid": {
+                          "type": "string"
+                        },
+                        "appidacr": {
+                          "type": "string"
+                        },
+                        "aud": {
+                          "type": "string"
+                        },
+                        "e_exp": {
+                          "type": "string"
+                        },
+                        "exp": {
+                          "type": "string"
+                        },
+                        "groups": {
+                          "type": "string"
+                        },
+                        "http://schemas.microsoft.com/claims/authnclassreference": {
+                          "type": "string"
+                        },
+                        "http://schemas.microsoft.com/claims/authnmethodsreferences": {
+                          "type": "string"
+                        },
+                        "http://schemas.microsoft.com/identity/claims/identityprovider": {
+                          "type": "string"
+                        },
+                        "http://schemas.microsoft.com/identity/claims/objectidentifier": {
+                          "type": "string"
+                        },
+                        "http://schemas.microsoft.com/identity/claims/scope": {
+                          "type": "string"
+                        },
+                        "http://schemas.microsoft.com/identity/claims/tenantid": {
+                          "type": "string"
+                        },
+                        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress": {
+                          "type": "string"
+                        },
+                        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname": {
+                          "type": "string"
+                        },
+                        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name": {
+                          "type": "string"
+                        },
+                        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier": {
+                          "type": "string"
+                        },
+                        "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname": {
+                          "type": "string"
+                        },
+                        "iat": {
+                          "type": "string"
+                        },
+                        "ipaddr": {
+                          "type": "string"
+                        },
+                        "iss": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "nbf": {
+                          "type": "string"
+                        },
+                        "puid": {
+                          "type": "string"
+                        },
+                        "uti": {
+                          "type": "string"
+                        },
+                        "ver": {
+                          "type": "string"
+                        },
+                        "wids": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "correlationId": {
+                      "type": "string"
+                    },
+                    "httpRequest": {
+                      "properties": {
+                        "clientIpAddress": {
+                          "type": "string"
+                        },
+                        "clientRequestId": {
+                          "type": "string"
+                        },
+                        "method": {
+                          "type": "string"
+                        },
+                        "url": {
+                          "type": "string"
+                        }
+                      },
+                      "type": "object"
+                    },
+                    "operationName": {
+                      "type": "string"
+                    },
+                    "resourceProvider": {
+                      "type": "string"
+                    },
+                    "resourceUri": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "subscriptionId": {
+                      "type": "string"
+                    },
+                    "tenantId": {
+                      "type": "string"
+                    }
+                  },
+                  "type": "object"
+                }
+              },
+              "runAfter": {}
+            },
+            "Condition": {
+              "type": "If",
+              "expression": {
+                "or": [
+                  {
+                    "contains": [
+                      "@body('Parse_JSON')?['resourceProvider']",
+                      "applicationGateway"
+                    ]
+                  },
+                  {
+                    "contains": [
+                      "@body('Parse_JSON')?['resourceProvider']",
+                      "publicIP"
+                    ]
+                  }
+                ]
+              },
+              "actions": {},
+              "runAfter": {
+                "Parse_JSON": [
+                  "Succeeded"
+                ]
+              }
+            }
+          },
+          "parameters": {
+            "$connections": {
+              "defaultValue": {},
+              "type": "Object"
+            }
+          },
+          "triggers": {
+            "When_a_resource_event_occurs": {
+              "type": "ApiConnectionWebhook",
+              "inputs": {
+                "host": {
+                  "connection": {
+                    "name": "@parameters('$connections')['azureeventgrid_1']['connectionId']"
+                  }
+                },
+                "body": {
+                  "properties": {
+                    "topic": "/subscriptions/bef0cc89-4657-431c-8d6b-aa033e662dfe/resourceGroups/gc-sandbox",
+                    "destination": {
+                      "endpointType": "webhook",
+                      "properties": {
+                        "endpointUrl": "@{listCallbackUrl()}"
+                      }
+                    }
+                  }
+                },
+                "path": "/subscriptions/@{encodeURIComponent('bef0cc89-4657-431c-8d6b-aa033e662dfe')}/providers/@{encodeURIComponent('Microsoft.Resources.ResourceGroups')}/resource/eventSubscriptions",
+                "queries": {
+                  "x-ms-api-version": "2017-06-15-preview"
+                }
+              },
+              "splitOn": "@triggerBody()"
+            }
+          },
+          "contentVersion": "1.0.0.0",
+          "outputs": {}
+        },
+        "parameters": {
+          "$connections": {
+            "value": {
+              "azureeventgrid_1": {
+                "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'azureeventgrid')]",
+                "connectionId": "[resourceId('Microsoft.Web/connections', parameters('azureeventgrid_1_Connection_Name'))]",
+                "connectionName": "[parameters('azureeventgrid_1_Connection_Name')]"
+              }
+            }
+          }
+        }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/connections', parameters('azureeventgrid_1_Connection_Name'))]"
+      ]
+    },
+    {
+      "type": "MICROSOFT.WEB/CONNECTIONS",
+      "apiVersion": "2016-06-01",
+      "name": "[parameters('azureeventgrid_1_Connection_Name')]",
+      "location": "[parameters('logicAppLocation')]",
+      "properties": {
+        "api": {
+          "id": "[concat(subscription().id, '/providers/Microsoft.Web/locations/', parameters('logicAppLocation'), '/managedApis/', 'azureeventgrid')]"
+        },
+        "displayName": "[parameters('azureeventgrid_1_Connection_DisplayName')]"
+      }
+    }
+  ],
+  "outputs": {}
+}

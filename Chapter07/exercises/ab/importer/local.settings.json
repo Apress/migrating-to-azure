@@ -1,0 +1,17 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "WEBSITE_SLOT_NAME": "Production",
+    "FUNCTIONS_EXTENSION_VERSION": "~1",
+    "ScmType": "None",
+    "gc-sandbox_DOCUMENTDB": "AccountEndpoint=https://gc-sandbox.documents.azure.com:443/;AccountKey=hxKxBK0PFFTt7jXbbkmqNauLnh7yUEdmSaiDuRInpHBv4PB18m55kpWE7w2sdFk1jOzFhazbqOHsxHmnVmITow==;",
+    "WEBSITE_AUTH_ENABLED": "False",
+    "APPINSIGHTS_INSTRUMENTATIONKEY": "6acd774e-f175-4ba1-b312-360c7b4717da",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=frankenstorage;AccountKey=koQHr72hrRaBYPF9kT5F+XfeIZ8fhp7nt6DuyQnRmnzTrVBukCOMxgcdtsjKx+zUztzxbf1rvUwERnvqimfY7g==",
+    "WEBSITE_NODE_DEFAULT_VERSION": "6.5.0",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=frankenstorage;AccountKey=koQHr72hrRaBYPF9kT5F+XfeIZ8fhp7nt6DuyQnRmnzTrVBukCOMxgcdtsjKx+zUztzxbf1rvUwERnvqimfY7g==",
+    "WEBSITE_CONTENTSHARE": "gc-sandboxa9a8",
+    "WEBSITE_SITE_NAME": "gc-sandbox",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=frankenstorage;AccountKey=koQHr72hrRaBYPF9kT5F+XfeIZ8fhp7nt6DuyQnRmnzTrVBukCOMxgcdtsjKx+zUztzxbf1rvUwERnvqimfY7g=="
+  }
+}

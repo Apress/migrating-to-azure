@@ -1,0 +1,9 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "listOfAllowedSKUs": {
+            "value": "2012-R2-Datacenter,2012-Datacenter,2008-R2-Datacenter,7.0,7.1,7.2,7.3"
+        }
+    }
+}

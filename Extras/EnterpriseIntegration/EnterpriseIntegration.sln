@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "ServiceNow", "ServiceNow\ServiceNow.deployproj", "{C66CE327-F870-45B4-811C-A7C53AF403F6}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "EventGrid", "EventGrid\EventGrid.deployproj", "{BBCF9DEF-00A7-4D0D-937B-E6C4D3B019E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C66CE327-F870-45B4-811C-A7C53AF403F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66CE327-F870-45B4-811C-A7C53AF403F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66CE327-F870-45B4-811C-A7C53AF403F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66CE327-F870-45B4-811C-A7C53AF403F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBCF9DEF-00A7-4D0D-937B-E6C4D3B019E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCF9DEF-00A7-4D0D-937B-E6C4D3B019E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCF9DEF-00A7-4D0D-937B-E6C4D3B019E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCF9DEF-00A7-4D0D-937B-E6C4D3B019E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A0BB008-E286-488F-927D-E1E627F858F3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: fbelzunc
+Build-Jdk: 1.8.0_65
+Extension-Name: active-directory
+Specification-Title: Enables authentication through Active Directory
+Implementation-Title: active-directory
+Implementation-Version: 2.6
+Group-Id: org.jenkins-ci.plugins
+Short-Name: active-directory
+Long-Name: Jenkins Active Directory plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Active+Directory+Plugin
+Compatible-Since-Version: 2.0
+Plugin-Version: 2.6
+Hudson-Version: 1.554.1
+Jenkins-Version: 1.554.1
+Plugin-Dependencies: mailer:1.5
+Plugin-Developers: Kohsuke Kawaguchi:kohsuke:,Felix Belzunce Arcos:fbe
+ lzunc:
+

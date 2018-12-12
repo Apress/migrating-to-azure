@@ -1,0 +1,313 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "newLabName": {
+      "type": "string",
+      "metadata": {
+        "description": "The name of the new lab instance to be created."
+      }
+    },
+    "labVmShutDownTime": {
+      "type": "string",
+      "minLength": 4,
+      "maxLength": 5,
+      "metadata": {
+        "description": "The time (relative to timeZoneId) at which the Lab VMs will be automatically shutdown (E.g. 17:30, 20:00, 09:00)."
+      }
+    },
+
+    "teamOwner": {
+      "type": "string",
+      "defaultValue": "Sample Team",
+      "metadata": {
+        "description": "The name of the team designated as the primary owner of the lab resources."
+      }
+    },
+    "timeZoneId": {
+      "type": "string",
+      "minLength": 3,
+      "metadata": {
+        "description": "The Windows time zone id associated with labVmShutDownTime (E.g. UTC, Pacific Standard Time, Central Europe Standard Time)."
+      }
+    },
+    "totalLabUsers": {
+      "type": "int",
+      "minValue": 0,
+      "metadata": {
+        "description": "The maximum number of users in the lab."
+      }
+    },
+    "allowedVmSizes": {
+      "type": "string",
+      "defaultValue": "\\\"Standard_DS1_v2\\\", \\\"Standard_DS2_v2\\\", \\\"Standard_DS3_v2\\\", \\\"Standard_D2s_v3\\\", \\\"Standard_D4s_v3\\\"",
+      "minLength": 3,
+      "metadata": {
+        "description": "A comma-separated list of VM sizes that are allowed in the lab."
+      }
+    },
+    "artifactRepositoryDisplayName": {
+      "type": "string",
+      "defaultValue": "Gamecorp.DevOps"
+    },
+    "artifactRepoUri": {
+      "type": "string",
+      "defaultValue": "https://gamecorp-us.visualstudio.com"
+    },
+    "artifactRepoBranch": {
+      "type": "string",
+      "defaultValue": "develop"
+    },
+    "artifactRepoFolder": {
+      "type": "string",
+      "defaultValue": "DevTestLabs.Artifacts/"
+    },
+    "armTemplateFolder": {
+      "type": "string",
+      "defaultValue": "Single Servers/AllInOneLinked/"
+    },
+    "artifactRepoType": {
+      "type": "string",
+      "allowedValues": [ "VsoGit", "GitHub" ],
+      "defaultValue": "VsoGit"
+    },
+    "artifactRepoSecurityToken": {
+      "type": "securestring"
+    },
+    "existingSubnetName": {
+      "type": "string",
+      "defaultValue": "GC-RO-NA-DEV-SUBN1"
+    },
+    "formulaName": {
+      "type": "string",
+      "defaultValue": "LzAllInOne-Win"
+    },
+    "vmOffer": {
+      "type": "string"
+    },
+    "vmPublisher": {
+      "type": "string"
+    },
+    "vmSku": {
+      "type": "string"
+    }
+  },
+  "variables": {
+    "artifactRepositoryName": "Liazon.DevOps.IaaSAzure",
+    "maxAllowedVmsPerLab": "[mul(2,parameters('totalLabUsers'))]",
+    "costThreshold": "[mul(variables('maxAllowedVmsPerLab'),100)]",
+    "labVirtualNetworkName": "GC-RO-NA-DEV-VNET",
+    "labSubnetName": "[concat(variables('labVirtualNetworkName'), 'Subnet')]",
+    "labVirtualNetworkId": "[concat('/virtualnetworks/', variables('labVirtualNetworkName'))]",
+    "existingVirtualNetworkId": "/subscriptions/0bba741c-db1e-42bd-af16-221616013431/resourceGroups/GC-RO-NETWORKS-RGRP/providers/Microsoft.Network/virtualNetworks/GC-RO-NA-DEV-VNET",
+    "existingSubnetId": "[concat(variables('existingVirtualNetworkId'), '/subnets/', parameters('existingSubnetName'))]",
+    "ostype": "Windows",
+    "images": "\"{\\\"offer\\\":\\\"CentOS\\\",\\\"publisher\\\":\\\"OpenLogic\\\",\\\"sku\\\":\\\"7.3\\\",\\\"osType\\\":\\\"Linux\\\",\\\"version\\\":\\\"latest\\\"}\",\"{\\\"offer\\\":\\\"CentOS\\\",\\\"publisher\\\":\\\"OpenLogic\\\",\\\"sku\\\":\\\"7.4\\\",\\\"osType\\\":\\\"Linux\\\",\\\"version\\\":\\\"latest\\\"}\",\"{\\\"offer\\\":\\\"WindowsServer\\\",\\\"publisher\\\":\\\"MicrosoftWindowsServer\\\",\\\"sku\\\":\\\"2016-Datacenter\\\",\\\"osType\\\":\\\"Windows\\\",\\\"version\\\":\\\"latest\\\"}\",\"{\\\"offer\\\":\\\"WindowsServer\\\",\\\"publisher\\\":\\\"MicrosoftWindowsServer\\\",\\\"sku\\\":\\\"2012-R2-Datacenter\\\",\\\"osType\\\":\\\"Windows\\\",\\\"version\\\":\\\"latest\\\"}\",\"{\\\"offer\\\":\\\"WindowsServer\\\",\\\"publisher\\\":\\\"MicrosoftWindowsServer\\\",\\\"sku\\\":\\\"2016-Datacenter-Server-Core\\\",\\\"osType\\\":\\\"Windows\\\",\\\"version\\\":\\\"latest\\\"}\",\"{\\\"offer\\\":\\\"WindowsServer\\\",\\\"publisher\\\":\\\"MicrosoftWindowsServer\\\",\\\"sku\\\":\\\"2016-Datacenter-with-Containers\\\",\\\"osType\\\":\\\"Windows\\\",\\\"version\\\":\\\"latest\\\"}\""
+  },
+  "resources": [
+    {
+      "apiVersion": "2017-04-26-preview",
+      "type": "Microsoft.DevTestLab/labs",
+      "name": "[trim(parameters('newLabName'))]",
+      "location": "[resourceGroup().location]",
+      "tags": {
+        "Region": "North America",
+        "LOB": "RO",
+        "Project": "404",
+        "Cost Center": "5550",
+        "AutoShutdown": "[parameters('labVmShutDownTime')]",
+        "Environment": "Dev",
+        "Team Owner": "[parameters('teamOwner')]"
+      },
+      "resources": [
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "LabVmsShutdown",
+          "type": "schedules",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+          ],
+          "properties": {
+            "status": "enabled",
+            "taskType": "LabVmsShutdownTask",
+            "timeZoneId": "[string(parameters('timeZoneId'))]",
+            "dailyRecurrence": {
+              "time": "[string(parameters('labVmShutDownTime'))]"
+            }
+          }
+        },
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "default/MaxVmsAllowedPerUser",
+          "type": "policySets/policies",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+          ],
+          "properties": {
+            "description": "",
+            "factName": "UserOwnedLabVmCount",
+            "threshold": "2",
+            "evaluatorType": "MaxValuePolicy",
+            "status": "enabled"
+          }
+        },
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "default/MaxVmsAllowedPerLab",
+          "type": "policySets/policies",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+          ],
+          "properties": {
+            "description": "",
+            "factName": "LabVmCount",
+            "threshold": "[string(variables('maxAllowedVmsPerLab'))]",
+            "evaluatorType": "MaxValuePolicy",
+            "status": "enabled"
+          }
+        },
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "default/AllowedVmSizesInLab",
+          "type": "policySets/policies",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+          ],
+          "properties": {
+            "description": "",
+            "factName": "LabVmSize",
+            "threshold": "[concat('[', trim(parameters('allowedVmSizes')), ']')]",
+            "evaluatorType": "AllowedValuesPolicy",
+            "status": "enabled"
+          }
+        },
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "[variables('artifactRepositoryName')]",
+          "type": "artifactSources",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+          ],
+          "properties": {
+            "uri": "[parameters('artifactRepoUri')]",
+            "armTemplateFolderPath": "[parameters('armTemplateFolder')]",
+            "folderPath": "[parameters('artifactRepoFolder')]",
+            "branchRef": "[parameters('artifactRepoBranch')]",
+            "displayName": "[parameters('artifactRepositoryDisplayName')]",
+            "securityToken": "[parameters('artifactRepoSecurityToken')]",
+            "sourceType": "[parameters('artifactRepoType')]",
+            "status": "Enabled"
+          }
+        },
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "targetCost",
+          "type": "costs",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+          ],
+          "properties": {
+            "targetCost": {
+              "cycleType": "CalendarMonth",
+              "status": "Enabled",
+              "target": "[variables('costThreshold')]",
+              "costThresholds": [
+                {
+                  "thresholdId": "96c08eae-885f-4a46-a15d-9dc991a32cbf",
+                  "thresholdStatus": "Disabled",
+                  "displayOnChart": "Enabled",
+                  "sendNotificationWhenExceeded": "Disabled",
+                  "percentageThreshold": { "thresholdValue": 75 }
+                },
+                {
+                  "thresholdId": "5ef03748-2e10-4b3c-afc2-cc766abf2d5d",
+                  "thresholdStatus": "Disabled",
+                  "displayOnChart": "Enabled",
+                  "sendNotificationWhenExceeded": "Enabled",
+                  "percentageThreshold": { "thresholdValue": 100 }
+                },
+                {
+                  "thresholdId": "b0bf180e-2e09-4073-8040-56e8a23dcd84",
+                  "thresholdStatus": "Disabled",
+                  "displayOnChart": "Disabled",
+                  "sendNotificationWhenExceeded": "Disabled",
+                  "percentageThreshold": { "thresholdValue": 125 }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "apiVersion": "2017-04-26-preview",
+          "name": "WTW-GRPE-DEV-NA21-VNET",
+          "type": "virtualNetworks",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+          ],
+          "properties": {
+            "description": "Existing Compute virtual network associated as part of the lab creation process.",
+            "externalProviderResourceId": "[variables('existingVirtualNetworkId')]",
+            "subnetOverrides": [
+              {
+                "name": "[parameters('existingSubnetName')]",
+                "resourceId": "[variables('existingSubnetId')]",
+                "useInVmCreationPermission": "Allow",
+                "usePublicIpAddressPermission": "Deny"
+              }
+            ]
+          }
+        },
+        {
+          "type": "microsoft.devtestlab/labs/formulas",
+          "name": "[concat(parameters('newLabName'), '/', parameters('formulaName'))]",
+          "location": "[resourceGroup().location]",
+          "apiversion": "2017-04-26-preview",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+          ],
+          "properties": {
+            "description": "Formula for Windows VM.",
+            "ostype": "[variables('ostype')]",
+            "formulacontent": {
+              "properties": {
+                "size": "Standard_D4s_v3",
+                "username": "",
+                "password": "",
+                "labsubnetname": "[variables('labSubnetName')]",
+                "labvirtualnetworkid": "[variables('labVirtualNetworkId')]",
+                "galleryimagereference": {
+                  "offer": "[parameters('vmOffer')]",
+                  "publisher": "[parameters('vmPublisher')]",
+                  "sku": "[parameters('vmSku')]",
+                  "ostype": "[variables('ostype')]",
+                  "version": "latest"
+                }
+              }
+            }
+          }
+        },
+        {
+          "apiVersion": "2015-05-21-preview",
+          "name": "default/GalleryImage",
+          "type": "policySets/policies",
+          "dependsOn": [
+            "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+          ],
+          "properties": {
+            "description": "",
+            "factName": "GalleryImage",
+            "evaluatorType": "AllowedValuesPolicy",
+            "status": "Enabled",
+            "threshold": "[concat('[', trim(variables('images')), ']')]"
+          }
+        }
+      ]
+    }
+  ],
+  "outputs": {
+    "labId": {
+      "type": "string",
+      "value": "[resourceId('Microsoft.DevTestLab/labs', parameters('newLabName'))]"
+    }
+  }
+}

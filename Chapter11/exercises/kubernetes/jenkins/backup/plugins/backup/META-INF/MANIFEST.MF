@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: F276977
+Build-Jdk: 1.6.0_24
+Extension-Name: backup
+Specification-Title: Backups and restores Hudson/Jenkins files
+Implementation-Title: backup
+Implementation-Version: 1.6.1
+Plugin-Class: org.jvnet.hudson.plugins.backup.BackupPluginImpl
+Group-Id: org.jvnet.hudson.plugins
+Short-Name: backup
+Long-Name: Backup plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Backup+Plugin
+Plugin-Version: 1.6.1
+Hudson-Version: 1.375
+Plugin-Developers: Vincent Sellier:vsellier:,Romain Seguy:rseguy:
+

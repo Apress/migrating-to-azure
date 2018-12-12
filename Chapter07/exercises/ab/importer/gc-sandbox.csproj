@@ -1,0 +1,170 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs" Version="2.1.0-beta1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" Version="1.0.0-beta1" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.0-alpha6" />
+    <PackageReference Include="ICSharpCode.SharpZipLib.dll" Version="0.85.4.369" />
+    <PackageReference Include="SharpZipLib.Portable" Version="0.86.0.3" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB" Version="1.21.1" />
+    <PackageReference Include="Microsoft.Azure.Common" Version="2.1.4" />
+    <PackageReference Include="Microsoft.Azure.KeyVault.Core" Version="2.0.4" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="1.9.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ProcessBenchmarkResults\._function.json" />
+    <None Remove="BlobTriggerCSharp1\bin\ICSharpCode.SharpZipLib.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="**/*" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="BlobTriggerCSharp1/bin/ICSharpCode.SharpZipLib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Azure.KeyVault.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Azure.WebJobs.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Azure.WebJobs.Extensions.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Azure.WebJobs.Extensions.Http.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Azure.WebJobs.Host.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Azure.WebJobs.ServiceBus.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Build.Framework.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Build.Utilities.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Data.Edm.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Data.OData.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Data.Services.Client.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Extensions.Logging.Abstractions.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.ServiceBus.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.ServiceBus.Messaging.EventProcessorHost.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.Win32.Primitives.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Microsoft.WindowsAzure.Storage.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/NCrontab.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.AppContext.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Console.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Diagnostics.DiagnosticSource.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Globalization.Calendars.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.IO.Compression.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.IO.Compression.ZipFile.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.IO.FileSystem.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.IO.FileSystem.Primitives.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Net.Http.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Net.Http.Formatting.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Net.Sockets.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Security.Cryptography.Algorithms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Security.Cryptography.Encoding.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Security.Cryptography.Primitives.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Security.Cryptography.X509Certificates.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Spatial.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Threading.Tasks.Dataflow.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Threading.Thread.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.ValueTuple.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Web.Http.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/bin/System.Xml.ReaderWriter.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/function.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/project.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/project.lock.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="BlobTriggerCSharp1/run.csx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="host.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

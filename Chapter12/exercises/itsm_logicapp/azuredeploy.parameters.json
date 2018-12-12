@@ -1,0 +1,621 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "certificates_AzureClassicRunAsCertificate_base64Value": {
+            "value": null
+        },
+        "certificates_AzureRunAsCertificate_base64Value": {
+            "value": null
+        },
+        "sites_gamecorp_ops_name": {
+            "value": null
+        },
+        "serverfarms_EastUSPlan_name": {
+            "value": null
+        },
+        "actionGroups_Logic_name": {
+            "value": null
+        },
+        "connections_service_now_name": {
+            "value": null
+        },
+        "workflows_event_monitor_name": {
+            "value": null
+        },
+        "connections_service_now_1_name": {
+            "value": null
+        },
+        "connections_azureeventgrid_name": {
+            "value": null
+        },
+        "components_gamecorp_ops_name": {
+            "value": null
+        },
+        "vaults_gc_prod_keyvault_name": {
+            "value": null
+        },
+        "config_web_name": {
+            "value": null
+        },
+        "topics_SubscriptionAudit_name": {
+            "value": null
+        },
+        "actionGroups_gamecorp_AG_1_name": {
+            "value": null
+        },
+        "workspaces_gamecorp_name": {
+            "value": null
+        },
+        "storageAccounts_gamecorpops9224_name": {
+            "value": null
+        },
+        "automationAccounts_gc_automation_name": {
+            "value": null
+        },
+        "activityLogAlerts_AllActivity_Prod_name": {
+            "value": null
+        },
+        "virtualNetworks_gamecorp_prod_blue_vnet_name": {
+            "value": null
+        },
+        "solutions_Updates(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_Security(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_WireData2(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_Containers(gamecorp)_name": {
+            "value": null
+        },
+        "alertrules_Failure_Anomalies___gamecorp_ops_name": {
+            "value": null
+        },
+        "solutions_AntiMalware(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_ServiceDesk(gamecorp)_name": {
+            "value": null
+        },
+        "secrets_CosmosDBKey_name": {
+            "value": null
+        },
+        "solutions_AzureActivity(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_SQLAssessment(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_ChangeTracking(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_AzureAutomation(gamecorp)_name": {
+            "value": null
+        },
+        "modules_Azure_name": {
+            "value": null
+        },
+        "solutions_AzureNSGAnalytics(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_NetworkMonitoring(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_ApplicationInsights(gamecorp)_name": {
+            "value": null
+        },
+        "solutions_LogicAppsManagement(gamecorp)_name": {
+            "value": null
+        },
+        "modules_AzureRM.Sql_name": {
+            "value": null
+        },
+        "solutions_AzureAppGatewayAnalytics(gamecorp)_name": {
+            "value": null
+        },
+        "connectionTypes_Azure_name": {
+            "value": null
+        },
+        "modules_Azure.Storage_name": {
+            "value": null
+        },
+        "linkedservices_automation_name": {
+            "value": null
+        },
+        "modules_AuditPolicyDsc_name": {
+            "value": null
+        },
+        "modules_PSDscResources_name": {
+            "value": null
+        },
+        "modules_xDSCDomainjoin_name": {
+            "value": null
+        },
+        "modules_AzureRM.Compute_name": {
+            "value": null
+        },
+        "modules_AzureRM.Profile_name": {
+            "value": null
+        },
+        "modules_AzureRM.Storage_name": {
+            "value": null
+        },
+        "runbooks_InstallOMSAgent_name": {
+            "value": null
+        },
+        "modules_AzureRM.Resources_name": {
+            "value": null
+        },
+        "modules_SecurityPolicyDsc_name": {
+            "value": null
+        },
+        "subnets_GatewaySubnet_name": {
+            "value": null
+        },
+        "modules_AzureRM.Automation_name": {
+            "value": null
+        },
+        "runbooks_OMS_To_ServiceNow_name": {
+            "value": null
+        },
+        "hostNameBindings_gamecorp_ops.azurewebsites.net_name": {
+            "value": null
+        },
+        "modules_xRemoteDesktopAdmin_name": {
+            "value": null
+        },
+        "modules_ComputerManagementDsc_name": {
+            "value": null
+        },
+        "modules_GPRegistryPolicyParser_name": {
+            "value": null
+        },
+        "connections_AzureRunAsConnection_name": {
+            "value": null
+        },
+        "modules_Microsoft.PowerShell.Core_name": {
+            "value": null
+        },
+        "certificates_AzureRunAsCertificate_name": {
+            "value": null
+        },
+        "modules_Microsoft.WSMan.Management_name": {
+            "value": null
+        },
+        "modules_xPowerShellExecutionPolicy_name": {
+            "value": null
+        },
+        "modules_Microsoft.PowerShell.Utility_name": {
+            "value": null
+        },
+        "connectionTypes_AzureServicePrincipal_name": {
+            "value": null
+        },
+        "modules_Microsoft.PowerShell.Security_name": {
+            "value": null
+        },
+        "modules_StateConfigCompositeResources_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_AllAgents_name": {
+            "value": null
+        },
+        "connections_AzureClassicRunAsConnection_name": {
+            "value": null
+        },
+        "connectionTypes_AzureClassicCertificate_name": {
+            "value": null
+        },
+        "modules_Microsoft.PowerShell.Management_name": {
+            "value": null
+        },
+        "modules_Microsoft.PowerShell.Diagnostics_name": {
+            "value": null
+        },
+        "certificates_AzureClassicRunAsCertificate_name": {
+            "value": null
+        },
+        "savedSearches_ServiceDesk(gamecorp)_AllWorkItem_name": {
+            "value": null
+        },
+        "savedSearches_SQLAssessment(gamecorp)_FocusAreas_name": {
+            "value": null
+        },
+        "savedSearches_ServiceDesk(gamecorp)_AllIncidents_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_AllIPAddresses_name": {
+            "value": null
+        },
+        "modules_Orchestrator.AssetManagement.Cmdlets_name": {
+            "value": null
+        },
+        "savedSearches_ChangeTracking(gamecorp)_AllChanges_name": {
+            "value": null
+        },
+        "savedSearches_9bbe455f_7e97_442b_bce1_9d5177e0a545_name": {
+            "value": null
+        },
+        "savedSearches_e37102c8_b0fd_4bbe_9959_6bc18822905d_name": {
+            "value": null
+        },
+        "savedSearches_AntiMalware(gamecorp)_MalwareByThreat_name": {
+            "value": null
+        },
+        "virtualNetworkPeerings_gc_prod_blue_to_core_name": {
+            "value": null
+        },
+        "savedSearches_Updates(gamecorp)_MissingUpdateRollups_name": {
+            "value": null
+        },
+        "savedSearches_ServiceDesk(gamecorp)_AllWorkItemToday_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_ProcessNamesExecuted_name": {
+            "value": null
+        },
+        "savedSearches_ChangeTracking(gamecorp)_ServiceChanges_name": {
+            "value": null
+        },
+        "savedSearches_ServiceDesk(gamecorp)_AllIncidentsToday_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_DistinctProcessName_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_AllSecurityActivities_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_LogonActivitybyDevice_name": {
+            "value": null
+        },
+        "savedSearches_ChangeTracking(gamecorp)_SoftwareChanges_name": {
+            "value": null
+        },
+        "savedSearches_ChangeTracking(gamecorp)_StoppedServices_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_AllRemoteIPsOutbound_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_LogonActivitybyAccount_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_TotalBytesByIPVersion_name": {
+            "value": null
+        },
+        "savedSearches_ServiceDesk(gamecorp)_AllSecurityIncidents_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_TotalBytesByProcessName_name": {
+            "value": null
+        },
+        "savedSearches_Updates(gamecorp)_ComputerWithMissingUpdates_name": {
+            "value": null
+        },
+        "savedSearches_ChangeTracking(gamecorp)_SoftwareChangeCount_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_DevicesWhereHashWasExecuted_name": {
+            "value": null
+        },
+        "savedSearches_Updates(gamecorp)_MissingUpdateSpecificProduct_name": {
+            "value": null
+        },
+        "savedSearches_Updates(gamecorp)_AutomaticUpdateConfiguration_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_General|StaleComputers_name": {
+            "value": null
+        },
+        "savedSearches_ChangeTracking(gamecorp)_ChangeTypePerComputer_name": {
+            "value": null
+        },
+        "savedSearches_SQLAssessment(gamecorp)_SQLRecommendationCount_name": {
+            "value": null
+        },
+        "savedSearches_AntiMalware(gamecorp)_SignatureOutOfDateDevices_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|AllEvents_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|AllSyslog_name": {
+            "value": null
+        },
+        "savedSearches_ServiceDesk(gamecorp)_AllSecurityIncidentsToday_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_DevicesWithSecurityLogCleared_name": {
+            "value": null
+        },
+        "savedSearches_Updates(gamecorp)_MissingCriticalSecurityUpdates_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_0%LatencySamplingFailureRate_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_RemotedLoggedAccountsOnDevices_name": {
+            "value": null
+        },
+        "savedSearches_Updates(gamecorp)_MissingRequiredUpdatesForServer_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_100%LatencySamplingFailureRate_name": {
+            "value": null
+        },
+        "savedSearches_AntiMalware(gamecorp)_ProtectionStatusUpdatesPerDay_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|WarningEvents_name": {
+            "value": null
+        },
+        "savedSearches_SQLAssessment(gamecorp)_SQLRecommendationByComputer_name": {
+            "value": null
+        },
+        "savedSearches_SQLAssessment(gamecorp)_SQLRecommendationByInstance_name": {
+            "value": null
+        },
+        "savedSearches_SQLAssessment(gamecorp)_SQLRecommendationByDatabase_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_AllRemoteIPsSpecificLocalSubnet_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_General|dataTypeDistribution_name": {
+            "value": null
+        },
+        "savedSearches_Updates(gamecorp)_DistinctMissingUpdatesCrossComputers_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|EventsByEventLog_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|EventsByEventsID_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|Show404PagesList_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|ServerRestartTime_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityActivitiesonTheDeviceDevice01_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|EventsByEventSource_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|AllSyslogByFacility_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_LogonActivityforUsersWith5timesActivity_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|CountOfWarningEvents_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|ListAllIISLogEntries_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|AllSyslogsWithErrors_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|LockedAccounts_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_TotalReceivedBytesByProtocolNameInbound_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_LogonActivityByDeviceWithMoreThan10Logons_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_AccountsWhoTerminatedMicrosoftAntimalware_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|AllSyslogByProcessName_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_General|dataPointsPerManagementGroup_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_General|AlphabeticallySortedComputers_name": {
+            "value": null
+        },
+        "savedSearches_Updates(gamecorp)_MissingSecurityOrCriticalWhereUpdateIsManual_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|IISLogEntriesForClientIP_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_TotalBytesSentByApplicationProtocolOutbound_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityActivitiesonTheDeviceDevice01ForAdmin_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|UserAccountsChanged_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|EventsWithStartedinEventID_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|EventsInOMBetween2000to3000_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|AccountsFailedToLogon_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|DisplayBreakdownRespondCodes_name": {
+            "value": null
+        },
+        "savedSearches_WireData2(gamecorp)_TotalBytesSentByApplicationServiceNameOutbound_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|NoOfConnectionsToOMSDKService_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|Auditd_ExecutedCommands_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityWarningNotableIssues|SuspiciousExecutables_name": {
+            "value": null
+        },
+        "savedSearches_Updates(gamecorp)_ErrorEventOnComputerMissingSecurityOrCriticalUpdate_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|FindMaximumTimeTakenForEachPage_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|CountIISLogEntriesHTTPUserAgent_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|TotalBytesSentByClientIPAddress_name": {
+            "value": null
+        },
+        "savedSearches_SQLAssessment(gamecorp)_SQLRecommendationComputerVSInstanceVSDatabase_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|AverageHTTPRequestTimeHTTPMethod_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|CountOfIISLogEntriesByURLForHost_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_DevicesWhereTheMicrosoftAntimalwareProcessTerminated_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|CountIISLogEntriesClientIPAddress_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|RemoteProcedureCallAttempts_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|ComputersWithFailedSuLogons_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|Auditd_AccountsFailedToLogin_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|ComputersWithFailedSshLogons_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|CountIISLogEntriesHTTPRequestMethod_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|TotalBytesReceivedByEachIISComputer_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|ComputersWithCleanedEventLogs_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|ComputersWithFailedSudoLogons_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityWarningNotableIssues|DomainSecurityPolicyChanges_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityWarningNotableIssues|LogonsWithClearTextPassword_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|ChangeOrResetPasswordsAttempts_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|WindowsFireawallPolicySettingsChanged_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|SecurityGroupsCreatedOrModified_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|ShowServersThrowingInternalServerError_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityCriticalNotableIssues|ComputersWithDetectedThreats_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|AverageHTTPRequestTimeByClientIPAddress_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|ComputersWithNewLinuxGroupCreated_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityWarningNotableIssues|ComputersMissingCriticalUpdates_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|TotalBytesReceivedByEachAzureRoleInstance_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityCriticalNotableIssues|ComputersMissingSecurityUpdates_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityCriticalNotableIssues|ComputersWithGuestAccountLogons_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|ComputersWithUsersAddedToLinuxGroup_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|CountOfIISLogEntriesByURLRequestedByClient_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|CountOfIISLogEntriesByHostRequestedByClient_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityWarningNotableIssues|MembersAddedToSecurityEnabledGroups_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityWarningNotableIssues|ComputersWithInsufficientProtection_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|TotalBytesRespondedToClientsByClientIPAddress_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityCriticalNotableIssues|DistinctMaliciousIPAddressesAccessed_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityWarningNotableIssues|ComputersWithSystemAuditPolicyChanges_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|Auditd_LoadingOrUnloadingOfKernelModules_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|DistinctClientsResolvingMaliciousDomains_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|WindowsFireawallPolicySettingsChangedByMachines_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|ComputersWithFailedLinuxUserPasswordChange_name": {
+            "value": null
+        },
+        "savedSearches_LogManagement(gamecorp)_LogManagement|TotalBytesRespondedToClientsByEachIISServerIPAddress_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityWarningNotableIssues|LowPriorityADAssessmentSecurityRecommendations_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityInfoNotableIssues|Auditd_NumberOfDistinctLocationsOfProcessExecuted_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityWarningNotableIssues|LowPrioritySQLAssessmentSecurityRecommendations_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityCriticalNotableIssues|HighPriorityADAssessmentSecurityRecommendations_name": {
+            "value": null
+        },
+        "savedSearches_Security(gamecorp)_SecurityCriticalNotableIssues|HighPrioritySQLAssessmentSecurityRecommendations_name": {
+            "value": null
+        },
+        "actionGroups_Logic_resourceId": {
+            "value": null
+        },
+        "virtualNetworks_gamecorp_prod_blue_vnet_id": {
+            "value": null
+        },
+        "virtualNetworkPeerings_gc_prod_blue_to_core_id": {
+            "value": null
+        }
+    }
+}

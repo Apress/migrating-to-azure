@@ -1,0 +1,23 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "newVMName": {
+      "value": "NewDevTestLab"
+    },
+    "labName": {
+      "value": ""
+    },
+    "userName": {
+      "value": "gcroadmin"
+    },
+    "password": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/0bba741c-db1e-42bd-af16-221616013431/resourceGroups/GC-RO-NA-DEV-SHARED-RESOURCES/providers/Microsoft.KeyVault/vaults/NA-RO-VAULT-01"
+        },
+        "secretName": "WindowsAdminPassword"
+      }
+    }
+  }
+}

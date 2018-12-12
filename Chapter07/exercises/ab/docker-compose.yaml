@@ -1,0 +1,25 @@
+version: '3'
+services:
+  azurite:
+    image: arafato/azurite
+    ports:
+      - 10000:10000
+    environment:
+      - executable=blob
+    volumes:
+      - ~/blobstorage:/opt/azurite/folder
+  sql:
+    build: 
+      context: sql/
+    ports:
+      - 1433:1433
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Test1ng123!
+      - MSSQL_PID=Developer
+  func:
+    build:
+      context: importer/
+    depends_on:
+      - sql
+      - azurite

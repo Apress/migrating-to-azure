@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: extensions
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: azurefile
+  resources:
+    requests:
+      storage: 5Gi
+  selector:
+    # To make sure we match the claim with the exact volume, match the label
+    matchLabels:
+      usage: sonar
