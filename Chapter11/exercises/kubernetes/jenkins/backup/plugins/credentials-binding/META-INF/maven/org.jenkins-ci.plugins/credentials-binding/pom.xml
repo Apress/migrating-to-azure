@@ -20,7 +20,7 @@
   <properties>
     <jenkins.version>2.7.3</jenkins.version>
     <java.level>7</java.level>
-    <workflow-cps-plugin.version>2.32</workflow-cps-plugin.version>
+    <workflow-cps-plugin.version>2.65</workflow-cps-plugin.version>
     <workflow-step-api-plugin.version>2.10</workflow-step-api-plugin.version>
     <workflow-support-plugin.version>2.14</workflow-support-plugin.version>
   </properties>
