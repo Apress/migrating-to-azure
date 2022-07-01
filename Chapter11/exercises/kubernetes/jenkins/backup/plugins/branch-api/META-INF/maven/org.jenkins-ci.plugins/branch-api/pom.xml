@@ -128,7 +128,7 @@
     <dependency> <!-- previously gathered from org.jenkins-ci.lib:lib-jenkins-maven-embedder -->
       <groupId>org.codehaus.plexus</groupId>
       <artifactId>plexus-utils</artifactId>
-      <version>2.1</version>
+      <version>3.0.16</version>
       <scope>test</scope>
     </dependency>
     <dependency>
